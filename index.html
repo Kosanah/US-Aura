@@ -1,347 +1,691 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="US Aura Solutions - Vision. Value. Velocity. Leading provider of software solutions, AI automation, and technical consulting services.">
-    <title>US Aura Solutions - Vision. Value. Velocity</title>
-    <style>/* ==================== */
-/* CSS Variables */
-/* ==================== */
-:root {
-    --primary-color: #8b5cf6;
-    --secondary-color: #06b6d4;
-    --accent-blue: #3b82f6;
-    --dark-bg: #0a0e1a;
-    --darker-bg: #050810;
-    --card-bg: #151b2e;
-    --text-primary: #e2e8f0;
-    --text-secondary: #94a3b8;
-    --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
-    --shadow-lg: 0 20px 60px rgba(139, 92, 246, 0.2);
-    --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.35);
-    --transition: all 0.3s ease;
-}
+﻿<!DOCTYPE html><!DOCTYPE html>
 
-/* ==================== */
-/* Custom Cursor */
-/* ==================== */
-.custom-cursor,
-.cursor-follower {
-    position: fixed;
-    border-radius: 50%;
-    pointer-events: none;
+<html lang="en"><html lang="en">
+
+<head><head>
+
+    <meta charset="UTF-8">    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>US Aura Solutions | Vision. Value. Velocity.</title>    <meta name="description" content="US Aura Solutions - Vision. Value. Velocity. Leading provider of software solutions, AI automation, and technical consulting services.">
+
+    <link rel="stylesheet" href="styles.css">    <title>US Aura Solutions - Vision. Value. Velocity</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <style>/* ==================== */
+
+</head>/* CSS Variables */
+
+<body>/* ==================== */
+
+    <!-- Navigation -->:root {
+
+    <nav class="navbar">    --primary-color: #8b5cf6;
+
+        <div class="container">    --secondary-color: #06b6d4;
+
+            <div class="nav-content">    --accent-blue: #3b82f6;
+
+                <div class="logo">    --dark-bg: #0a0e1a;
+
+                    <img src="images/logo.png" alt="US Aura Solutions">    --darker-bg: #050810;
+
+                    <span>US Aura Solutions</span>    --card-bg: #151b2e;
+
+                </div>    --text-primary: #e2e8f0;
+
+                <ul class="nav-links">    --text-secondary: #94a3b8;
+
+                    <li><a href="#home">Home</a></li>    --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+
+                    <li><a href="#services">Services</a></li>    --shadow-lg: 0 20px 60px rgba(139, 92, 246, 0.2);
+
+                    <li><a href="#about">About</a></li>    --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.35);
+
+                    <li><a href="#reviews">Reviews</a></li>    --transition: all 0.3s ease;
+
+                    <li><a href="#contact">Contact</a></li>}
+
+                </ul>
+
+                <div class="hamburger">/* ==================== */
+
+                    <span></span>/* Custom Cursor */
+
+                    <span></span>/* ==================== */
+
+                    <span></span>.custom-cursor,
+
+                </div>.cursor-follower {
+
+            </div>    position: fixed;
+
+        </div>    border-radius: 50%;
+
+    </nav>    pointer-events: none;
+
     z-index: 9999;
-    mix-blend-mode: difference;
-    transition: opacity 0.3s ease;
-}
 
-.custom-cursor {
-    width: 10px;
-    height: 10px;
-    background: var(--text-primary);
-    transform: translate(-50%, -50%);
-}
+    <!-- Hero Section -->    mix-blend-mode: difference;
 
-.cursor-follower {
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--text-primary);
-    transform: translate(-50%, -50%);
-    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
-}
+    <section id="home" class="hero">    transition: opacity 0.3s ease;
+
+        <div class="hero-background"></div>}
+
+        <div class="container">
+
+            <div class="hero-content">.custom-cursor {
+
+                <h1 class="hero-title">    width: 10px;
+
+                    <span class="gradient-text">Vision. Value. Velocity.</span>    height: 10px;
+
+                </h1>    background: var(--text-primary);
+
+                <p class="hero-subtitle">Transform Your Business with Cutting-Edge Technology Solutions</p>    transform: translate(-50%, -50%);
+
+                <div class="hero-buttons">}
+
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>.cursor-follower {
+
+                </div>    width: 40px;
+
+            </div>    height: 40px;
+
+        </div>    border: 2px solid var(--text-primary);
+
+        <div class="scroll-indicator">    transform: translate(-50%, -50%);
+
+            <span></span>    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+
+        </div>}
+
+    </section>
 
 .custom-cursor.cursor-hover {
-    transform: translate(-50%, -50%) scale(1.5);
-}
 
-.cursor-follower.cursor-hover {
-    width: 60px;
-    height: 60px;
-    border-color: var(--primary-color);
-}
+    <!-- Services Section -->    transform: translate(-50%, -50%) scale(1.5);
 
-/* Hide default cursor */
-body,
-a,
-button,
-input,
-textarea {
-    cursor: none !important;
-}
+    <section id="services" class="services">}
 
-/* Show default cursor on mobile/tablet */
-@media (max-width: 968px) {
-    body,
-    a,
-    button,
-    input,
-    textarea {
-        cursor: auto !important;
-    }
-    
-    .custom-cursor,
-    .cursor-follower {
-        display: none;
-    }
-}
+        <div class="container">
 
-/* ==================== */
-/* Reset & Base Styles */
-/* ==================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            <div class="section-header">.cursor-follower.cursor-hover {
 
-html {
-    scroll-behavior: smooth;
-    font-size: 16px;
-}
+                <h2 class="section-title">Our Services</h2>    width: 60px;
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--dark-bg);
-    color: var(--text-primary);
-    line-height: 1.6;
-    overflow-x: hidden;
-    position: relative;
-}
+                <p class="section-subtitle">Comprehensive technology solutions tailored to your needs</p>    height: 60px;
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.02) 1px, transparent 1px),
-        radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.02) 1px, transparent 1px);
-    background-size: 50px 50px;
-    background-position: 0 0, 25px 25px;
+            </div>    border-color: var(--primary-color);
+
+            <div class="services-grid">}
+
+                <div class="service-card">
+
+                    <div class="service-icon">/* Hide default cursor */
+
+                        <i class="fas fa-code"></i>body,
+
+                    </div>a,
+
+                    <h3>Software Solutions</h3>button,
+
+                    <p>Custom software development to streamline your business operations and drive growth.</p>input,
+
+                    <ul class="service-features">textarea {
+
+                        <li>Web Applications</li>    cursor: none !important;
+
+                        <li>Mobile Apps</li>}
+
+                        <li>Enterprise Software</li>
+
+                    </ul>/* Show default cursor on mobile/tablet */
+
+                </div>@media (max-width: 968px) {
+
+                <div class="service-card">    body,
+
+                    <div class="service-icon">    a,
+
+                        <i class="fas fa-robot"></i>    button,
+
+                    </div>    input,
+
+                    <h3>AI & Automation</h3>    textarea {
+
+                    <p>Leverage artificial intelligence to automate processes and gain competitive advantages.</p>        cursor: auto !important;
+
+                    <ul class="service-features">    }
+
+                        <li>Machine Learning</li>    
+
+                        <li>Process Automation</li>    .custom-cursor,
+
+                        <li>Intelligent Chatbots</li>    .cursor-follower {
+
+                    </ul>        display: none;
+
+                </div>    }
+
+                <div class="service-card">}
+
+                    <div class="service-icon">
+
+                        <i class="fas fa-project-diagram"></i>/* ==================== */
+
+                    </div>/* Reset & Base Styles */
+
+                    <h3>Project Implementation</h3>/* ==================== */
+
+                    <p>End-to-end project management ensuring successful delivery on time and within budget.</p>* {
+
+                    <ul class="service-features">    margin: 0;
+
+                        <li>Agile Methodology</li>    padding: 0;
+
+                        <li>Quality Assurance</li>    box-sizing: border-box;
+
+                        <li>Deployment Support</li>}
+
+                    </ul>
+
+                </div>html {
+
+                <div class="service-card">    scroll-behavior: smooth;
+
+                    <div class="service-icon">    font-size: 16px;
+
+                        <i class="fas fa-lightbulb"></i>}
+
+                    </div>
+
+                    <h3>Technical Consulting</h3>body {
+
+                    <p>Expert guidance to help you make informed technology decisions and strategy.</p>    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    <ul class="service-features">    background-color: var(--dark-bg);
+
+                        <li>Technology Strategy</li>    color: var(--text-primary);
+
+                        <li>Architecture Design</li>    line-height: 1.6;
+
+                        <li>Best Practices</li>    overflow-x: hidden;
+
+                    </ul>    position: relative;
+
+                </div>}
+
+                <div class="service-card">
+
+                    <div class="service-icon">body::before {
+
+                        <i class="fas fa-tools"></i>    content: '';
+
+                    </div>    position: fixed;
+
+                    <h3>Support & Maintenance</h3>    top: 0;
+
+                    <p>Ongoing support to keep your systems running smoothly and efficiently.</p>    left: 0;
+
+                    <ul class="service-features">    width: 100%;
+
+                        <li>24/7 Support</li>    height: 100%;
+
+                        <li>System Updates</li>    background-image: 
+
+                        <li>Performance Optimization</li>        radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.02) 1px, transparent 1px),
+
+                    </ul>        radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.02) 1px, transparent 1px);
+
+                </div>    background-size: 50px 50px;
+
+                <div class="service-card">    background-position: 0 0, 25px 25px;
+
+                    <div class="service-icon">    z-index: 0;
+
+                        <i class="fas fa-cloud"></i>    pointer-events: none;
+
+                    </div>}
+
+                    <h3>Cloud Solutions</h3>
+
+                    <p>Scalable cloud infrastructure and migration services for modern businesses.</p>/* ==================== */
+
+                    <ul class="service-features">/* Floating Background Shapes */
+
+                        <li>Cloud Migration</li>/* ==================== */
+
+                        <li>Infrastructure Setup</li>.bg-shapes {
+
+                        <li>Cloud Security</li>    position: fixed;
+
+                    </ul>    top: 0;
+
+                </div>    left: 0;
+
+            </div>    width: 100%;
+
+        </div>    height: 100%;
+
+    </section>    overflow: hidden;
+
     z-index: 0;
-    pointer-events: none;
-}
 
-/* ==================== */
-/* Floating Background Shapes */
-/* ==================== */
-.bg-shapes {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
-    pointer-events: none;
-}
+    <!-- About Section -->    pointer-events: none;
 
-.shape {
-    position: absolute;
-    filter: blur(90px);
-    opacity: 0.25;
-    animation: floatShape 25s ease-in-out infinite;
-}
+    <section id="about" class="about">}
 
-.shape-1 {
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
-    top: 5%;
-    left: -5%;
-    animation-duration: 30s;
-}
+        <div class="container">
 
-.shape-2 {
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, transparent 70%);
-    top: 50%;
-    right: -5%;
-    animation-duration: 35s;
-    animation-delay: 5s;
-}
+            <div class="about-content">.shape {
 
-.shape-3 {
-    width: 450px;
+                <div class="about-text">    position: absolute;
+
+                    <h2 class="section-title">About US Aura Solutions</h2>    filter: blur(90px);
+
+                    <p>We are a leading technology solutions provider specializing in software development, AI integration, and digital transformation. Our team of experts is dedicated to delivering innovative solutions that drive business success.</p>    opacity: 0.25;
+
+                    <p>With years of experience across various industries, we understand the unique challenges businesses face in today's digital landscape. Our approach combines cutting-edge technology with practical business insights to create solutions that deliver real value.</p>    animation: floatShape 25s ease-in-out infinite;
+
+                    <div class="stats">}
+
+                        <div class="stat-item">
+
+                            <h3 class="stat-number" data-target="100">0</h3>.shape-1 {
+
+                            <p>Projects Completed</p>    width: 500px;
+
+                        </div>    height: 500px;
+
+                        <div class="stat-item">    background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+
+                            <h3 class="stat-number" data-target="50">0</h3>    top: 5%;
+
+                            <p>Happy Clients</p>    left: -5%;
+
+                        </div>    animation-duration: 30s;
+
+                        <div class="stat-item">}
+
+                            <h3 class="stat-number" data-target="15">0</h3>
+
+                            <p>Team Members</p>.shape-2 {
+
+                        </div>    width: 600px;
+
+                    </div>    height: 600px;
+
+                </div>    background: radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, transparent 70%);
+
+                <div class="about-image">    top: 50%;
+
+                    <div class="image-placeholder">    right: -5%;
+
+                        <i class="fas fa-laptop-code"></i>    animation-duration: 35s;
+
+                    </div>    animation-delay: 5s;
+
+                </div>}
+
+            </div>
+
+        </div>.shape-3 {
+
+    </section>    width: 450px;
+
     height: 450px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.18) 0%, transparent 70%);
-    bottom: 10%;
-    left: 10%;
-    animation-duration: 32s;
-    animation-delay: 10s;
-}
 
-.shape-4 {
-    width: 550px;
-    height: 550px;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.22) 0%, transparent 70%);
-    top: 35%;
-    right: 15%;
-    animation-duration: 38s;
-    animation-delay: 3s;
-}
+    <!-- Reviews Section -->    background: radial-gradient(circle, rgba(59, 130, 246, 0.18) 0%, transparent 70%);
 
-@keyframes floatShape {
-    0%, 100% {
-        transform: translate(0, 0) scale(1) rotate(0deg);
-    }
-    25% {
-        transform: translate(40px, -40px) scale(1.1) rotate(5deg);
-    }
-    50% {
-        transform: translate(-30px, -50px) scale(0.95) rotate(-3deg);
-    }
-    75% {
-        transform: translate(50px, 30px) scale(1.05) rotate(8deg);
-    }
-}
+    <section id="reviews" class="reviews">    bottom: 10%;
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-    z-index: 1;
-}
+        <div class="container">    left: 10%;
 
-/* ==================== */
-/* Navigation */
-/* ==================== */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(8, 8, 15, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(139, 92, 246, 0.15);
-}
+            <div class="section-header">    animation-duration: 32s;
 
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+                <h2 class="section-title">Client Reviews</h2>    animation-delay: 10s;
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    z-index: 10;
-    position: relative;
-}
+                <p class="section-subtitle">What our clients say about working with us</p>}
 
-.logo-img {
-    height: 60px;
-    width: auto;
-    max-width: 200px;
-    filter: drop-shadow(0 4px 12px rgba(139, 92, 246, 0.6)) 
+            </div>
+
+            <div class="reviews-grid">.shape-4 {
+
+                <div class="review-card">    width: 550px;
+
+                    <div class="review-header">    height: 550px;
+
+                        <div class="reviewer-info">    background: radial-gradient(circle, rgba(139, 92, 246, 0.22) 0%, transparent 70%);
+
+                            <div class="reviewer-avatar">    top: 35%;
+
+                                <i class="fas fa-user"></i>    right: 15%;
+
+                            </div>    animation-duration: 38s;
+
+                            <div>    animation-delay: 3s;
+
+                                <h4>Sarah Mitchell</h4>}
+
+                                <p class="reviewer-title">CEO, TechStart Inc.</p>
+
+                            </div>@keyframes floatShape {
+
+                        </div>    0%, 100% {
+
+                        <div class="rating">        transform: translate(0, 0) scale(1) rotate(0deg);
+
+                            <i class="fas fa-star"></i>    }
+
+                            <i class="fas fa-star"></i>    25% {
+
+                            <i class="fas fa-star"></i>        transform: translate(40px, -40px) scale(1.1) rotate(5deg);
+
+                            <i class="fas fa-star"></i>    }
+
+                            <i class="fas fa-star"></i>    50% {
+
+                        </div>        transform: translate(-30px, -50px) scale(0.95) rotate(-3deg);
+
+                    </div>    }
+
+                    <p class="review-text">"US Aura Solutions transformed our business with their innovative software solutions. Their team's expertise in AI and automation helped us increase efficiency by 40%. Highly recommend!"</p>    75% {
+
+                </div>        transform: translate(50px, 30px) scale(1.05) rotate(8deg);
+
+                <div class="review-card">    }
+
+                    <div class="review-header">}
+
+                        <div class="reviewer-info">
+
+                            <div class="reviewer-avatar">.container {
+
+                                <i class="fas fa-user"></i>    max-width: 1200px;
+
+                            </div>    margin: 0 auto;
+
+                            <div>    padding: 0 20px;
+
+                                <h4>Michael Chen</h4>    position: relative;
+
+                                <p class="reviewer-title">CTO, GlobalTech Solutions</p>    z-index: 1;
+
+                            </div>}
+
+                        </div>
+
+                        <div class="rating">/* ==================== */
+
+                            <i class="fas fa-star"></i>/* Navigation */
+
+                            <i class="fas fa-star"></i>/* ==================== */
+
+                            <i class="fas fa-star"></i>.navbar {
+
+                            <i class="fas fa-star"></i>    position: fixed;
+
+                            <i class="fas fa-star"></i>    top: 0;
+
+                        </div>    left: 0;
+
+                    </div>    width: 100%;
+
+                    <p class="review-text">"Working with US Aura Solutions was a game-changer for our company. Their cloud migration services were seamless, and their support team is always responsive and helpful."</p>    background: rgba(8, 8, 15, 0.95);
+
+                </div>    backdrop-filter: blur(10px);
+
+                <div class="review-card">    z-index: 1000;
+
+                    <div class="review-header">    padding: 1rem 0;
+
+                        <div class="reviewer-info">    border-bottom: 1px solid rgba(139, 92, 246, 0.15);
+
+                            <div class="reviewer-avatar">}
+
+                                <i class="fas fa-user"></i>
+
+                            </div>.nav-wrapper {
+
+                            <div>    display: flex;
+
+                                <h4>Emily Rodriguez</h4>    justify-content: space-between;
+
+                                <p class="reviewer-title">Director of Operations, InnovateCorp</p>    align-items: center;
+
+                            </div>}
+
+                        </div>
+
+                        <div class="rating">.logo {
+
+                            <i class="fas fa-star"></i>    display: flex;
+
+                            <i class="fas fa-star"></i>    align-items: center;
+
+                            <i class="fas fa-star"></i>    gap: 12px;
+
+                            <i class="fas fa-star"></i>    z-index: 10;
+
+                            <i class="fas fa-star"></i>    position: relative;
+
+                        </div>}
+
+                    </div>
+
+                    <p class="review-text">"Exceptional service from start to finish! US Aura Solutions delivered our custom enterprise application ahead of schedule and exceeded all our expectations. True professionals!"</p>.logo-img {
+
+                </div>    height: 60px;
+
+            </div>    width: auto;
+
+        </div>    max-width: 200px;
+
+    </section>    filter: drop-shadow(0 4px 12px rgba(139, 92, 246, 0.6)) 
+
             drop-shadow(0 2px 6px rgba(6, 182, 212, 0.4))
-            brightness(1.15) 
-            contrast(1.1);
-    transition: var(--transition);
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
+
+    <!-- Contact Section -->            brightness(1.15) 
+
+    <section id="contact" class="contact">            contrast(1.1);
+
+        <div class="container">    transition: var(--transition);
+
+            <div class="section-header">    image-rendering: -webkit-optimize-contrast;
+
+                <h2 class="section-title">Get In Touch</h2>    image-rendering: crisp-edges;
+
+                <p class="section-subtitle">Let's discuss how we can help transform your business</p>}
+
+            </div>
+
+            <div class="contact-content">.logo-img:hover {
+
+                <div class="contact-info">    filter: drop-shadow(0 6px 16px rgba(139, 92, 246, 0.8)) 
+
+                    <div class="contact-item">            drop-shadow(0 3px 8px rgba(6, 182, 212, 0.6))
+
+                        <i class="fas fa-envelope"></i>            brightness(1.25) 
+
+                        <div>            contrast(1.15);
+
+                            <h4>Email</h4>    transform: scale(1.05);
+
+                            <a href="mailto:info@usaurasolutionsllc.com">info@usaurasolutionsllc.com</a>}
+
+                        </div>
+
+                    </div>.logo-text-fallback {
+
+                    <div class="contact-item">    font-size: 1.5rem;
+
+                        <i class="fab fa-linkedin"></i>    font-weight: 700;
+
+                        <div>    background: var(--accent-gradient);
+
+                            <h4>LinkedIn</h4>    -webkit-background-clip: text;
+
+                            <a href="https://www.linkedin.com/company/usaurasolutions" target="_blank">linkedin.com/company/usaurasolutions</a>    -webkit-text-fill-color: transparent;
+
+                        </div>    background-clip: text;
+
+                    </div>    letter-spacing: -0.5px;
+
+                    <div class="contact-item">    display: none;
+
+                        <i class="fas fa-map-marker-alt"></i>}
+
+                        <div>
+
+                            <h4>Location</h4>.logo-text {
+
+                            <p>United States</p>    display: none;
+
+                        </div>}
+
+                    </div>
+
+                </div>.nav-menu {
+
+                <form class="contact-form">    display: flex;
+
+                    <div class="form-group">    list-style: none;
+
+                        <input type="text" placeholder="Your Name" required>    gap: 2.5rem;
+
+                    </div>    align-items: center;
+
+                    <div class="form-group">}
+
+                        <input type="email" placeholder="Your Email" required>
+
+                    </div>.btn-nav-cta {
+
+                    <div class="form-group">    background: var(--accent-gradient);
+
+                        <input type="text" placeholder="Subject">    color: var(--text-primary) !important;
+
+                    </div>    padding: 0.7rem 1.5rem;
+
+                    <div class="form-group">    border-radius: 6px;
+
+                        <textarea placeholder="Your Message" rows="5" required></textarea>    font-weight: 600;
+
+                    </div>    transition: var(--transition);
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>}
+
+                </form>
+
+            </div>.btn-nav-cta:hover {
+
+        </div>    transform: translateY(-2px);
+
+    </section>    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.4);
+
 }
 
-.logo-img:hover {
-    filter: drop-shadow(0 6px 16px rgba(139, 92, 246, 0.8)) 
-            drop-shadow(0 3px 8px rgba(6, 182, 212, 0.6))
-            brightness(1.25) 
-            contrast(1.15);
-    transform: scale(1.05);
-}
+    <!-- Footer -->
 
-.logo-text-fallback {
-    font-size: 1.5rem;
-    font-weight: 700;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: -0.5px;
-    display: none;
-}
+    <footer class="footer">.btn-nav-cta::after {
 
-.logo-text {
-    display: none;
-}
+        <div class="container">    display: none;
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-    align-items: center;
-}
+            <div class="footer-content">}
 
-.btn-nav-cta {
-    background: var(--accent-gradient);
-    color: var(--text-primary) !important;
-    padding: 0.7rem 1.5rem;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: var(--transition);
-}
+                <div class="footer-section">
 
-.btn-nav-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.4);
-}
+                    <div class="logo">.nav-link {
 
-.btn-nav-cta::after {
-    display: none;
-}
+                        <img src="images/logo.png" alt="US Aura Solutions">    color: var(--text-secondary);
 
-.nav-link {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-    position: relative;
-}
+                        <span>US Aura Solutions</span>    text-decoration: none;
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--accent-gradient);
-    transition: var(--transition);
-}
+                    </div>    font-weight: 500;
 
-.nav-link:hover {
-    color: #c084fc;
-}
+                    <p>Vision. Value. Velocity.</p>    transition: var(--transition);
 
-.nav-link:hover::after {
-    width: 100%;
-}
+                    <p>Transforming businesses through innovative technology solutions.</p>    position: relative;
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
+                </div>}
 
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: var(--text-primary);
-    transition: var(--transition);
-}
+                <div class="footer-section">
 
-/* ==================== */
-/* Hero Section */
-/* ==================== */
+                    <h4>Quick Links</h4>.nav-link::after {
+
+                    <ul>    content: '';
+
+                        <li><a href="#home">Home</a></li>    position: absolute;
+
+                        <li><a href="#services">Services</a></li>    bottom: -5px;
+
+                        <li><a href="#about">About</a></li>    left: 0;
+
+                        <li><a href="#reviews">Reviews</a></li>    width: 0;
+
+                        <li><a href="#contact">Contact</a></li>    height: 2px;
+
+                    </ul>    background: var(--accent-gradient);
+
+                </div>    transition: var(--transition);
+
+                <div class="footer-section">}
+
+                    <h4>Services</h4>
+
+                    <ul>.nav-link:hover {
+
+                        <li><a href="#services">Software Solutions</a></li>    color: #c084fc;
+
+                        <li><a href="#services">AI & Automation</a></li>}
+
+                        <li><a href="#services">Project Implementation</a></li>
+
+                        <li><a href="#services">Technical Consulting</a></li>.nav-link:hover::after {
+
+                        <li><a href="#services">Support & Maintenance</a></li>    width: 100%;
+
+                    </ul>}
+
+                </div>
+
+                <div class="footer-section">.hamburger {
+
+                    <h4>Connect</h4>    display: none;
+
+                    <div class="social-links">    flex-direction: column;
+
+                        <a href="https://www.linkedin.com/company/usaurasolutions" target="_blank"><i class="fab fa-linkedin"></i></a>    gap: 5px;
+
+                        <a href="mailto:info@usaurasolutionsllc.com"><i class="fas fa-envelope"></i></a>    cursor: pointer;
+
+                    </div>}
+
+                </div>
+
+            </div>.hamburger span {
+
+            <div class="footer-bottom">    width: 25px;
+
+                <p>&copy; 2024 US Aura Solutions LLC. All rights reserved.</p>    height: 3px;
+
+            </div>    background: var(--text-primary);
+
+        </div>    transition: var(--transition);
+
+    </footer>}
+
+
+
+    <script src="script.js"></script>/* ==================== */
+
+</body>/* Hero Section */
+
+</html>/* ==================== */
+
 .hero {
     position: relative;
     min-height: 100vh;
