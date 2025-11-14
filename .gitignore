@@ -1,0 +1,14 @@
+# Development files
+combine.ps1
+LOGO_SETUP.md
+README.md
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
