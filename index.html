@@ -1,2356 +1,1987 @@
-﻿<!DOCTYPE html><!DOCTYPE html>
-
-<html lang="en"><html lang="en">
-
-<head><head>
-
-    <meta charset="UTF-8">    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>US Aura Solutions | Vision. Value. Velocity.</title>    <meta name="description" content="US Aura Solutions - Vision. Value. Velocity. Leading provider of software solutions, AI automation, and technical consulting services.">
-
-    <link rel="stylesheet" href="styles.css">    <title>US Aura Solutions - Vision. Value. Velocity</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <style>/* ==================== */
-
-</head>/* CSS Variables */
-
-<body>/* ==================== */
-
-    <!-- Navigation -->:root {
-
-    <nav class="navbar">    --primary-color: #8b5cf6;
-
-        <div class="container">    --secondary-color: #06b6d4;
-
-            <div class="nav-content">    --accent-blue: #3b82f6;
-
-                <div class="logo">    --dark-bg: #0a0e1a;
-
-                    <img src="images/logo.png" alt="US Aura Solutions">    --darker-bg: #050810;
-
-                    <span>US Aura Solutions</span>    --card-bg: #151b2e;
-
-                </div>    --text-primary: #e2e8f0;
-
-                <ul class="nav-links">    --text-secondary: #94a3b8;
-
-                    <li><a href="#home">Home</a></li>    --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
-
-                    <li><a href="#services">Services</a></li>    --shadow-lg: 0 20px 60px rgba(139, 92, 246, 0.2);
-
-                    <li><a href="#about">About</a></li>    --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.35);
-
-                    <li><a href="#reviews">Reviews</a></li>    --transition: all 0.3s ease;
-
-                    <li><a href="#contact">Contact</a></li>}
-
-                </ul>
-
-                <div class="hamburger">/* ==================== */
-
-                    <span></span>/* Custom Cursor */
-
-                    <span></span>/* ==================== */
-
-                    <span></span>.custom-cursor,
-
-                </div>.cursor-follower {
-
-            </div>    position: fixed;
-
-        </div>    border-radius: 50%;
-
-    </nav>    pointer-events: none;
-
-    z-index: 9999;
-
-    <!-- Hero Section -->    mix-blend-mode: difference;
-
-    <section id="home" class="hero">    transition: opacity 0.3s ease;
-
-        <div class="hero-background"></div>}
-
-        <div class="container">
-
-            <div class="hero-content">.custom-cursor {
-
-                <h1 class="hero-title">    width: 10px;
-
-                    <span class="gradient-text">Vision. Value. Velocity.</span>    height: 10px;
-
-                </h1>    background: var(--text-primary);
-
-                <p class="hero-subtitle">Transform Your Business with Cutting-Edge Technology Solutions</p>    transform: translate(-50%, -50%);
-
-                <div class="hero-buttons">}
-
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-
-                    <a href="#services" class="btn btn-secondary">Explore Services</a>.cursor-follower {
-
-                </div>    width: 40px;
-
-            </div>    height: 40px;
-
-        </div>    border: 2px solid var(--text-primary);
-
-        <div class="scroll-indicator">    transform: translate(-50%, -50%);
-
-            <span></span>    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
-
-        </div>}
-
-    </section>
-
-.custom-cursor.cursor-hover {
-
-    <!-- Services Section -->    transform: translate(-50%, -50%) scale(1.5);
-
-    <section id="services" class="services">}
-
-        <div class="container">
-
-            <div class="section-header">.cursor-follower.cursor-hover {
-
-                <h2 class="section-title">Our Services</h2>    width: 60px;
-
-                <p class="section-subtitle">Comprehensive technology solutions tailored to your needs</p>    height: 60px;
-
-            </div>    border-color: var(--primary-color);
-
-            <div class="services-grid">}
-
-                <div class="service-card">
-
-                    <div class="service-icon">/* Hide default cursor */
-
-                        <i class="fas fa-code"></i>body,
-
-                    </div>a,
-
-                    <h3>Software Solutions</h3>button,
-
-                    <p>Custom software development to streamline your business operations and drive growth.</p>input,
-
-                    <ul class="service-features">textarea {
-
-                        <li>Web Applications</li>    cursor: none !important;
-
-                        <li>Mobile Apps</li>}
-
-                        <li>Enterprise Software</li>
-
-                    </ul>/* Show default cursor on mobile/tablet */
-
-                </div>@media (max-width: 968px) {
-
-                <div class="service-card">    body,
-
-                    <div class="service-icon">    a,
-
-                        <i class="fas fa-robot"></i>    button,
-
-                    </div>    input,
-
-                    <h3>AI & Automation</h3>    textarea {
-
-                    <p>Leverage artificial intelligence to automate processes and gain competitive advantages.</p>        cursor: auto !important;
-
-                    <ul class="service-features">    }
-
-                        <li>Machine Learning</li>    
-
-                        <li>Process Automation</li>    .custom-cursor,
-
-                        <li>Intelligent Chatbots</li>    .cursor-follower {
-
-                    </ul>        display: none;
-
-                </div>    }
-
-                <div class="service-card">}
-
-                    <div class="service-icon">
-
-                        <i class="fas fa-project-diagram"></i>/* ==================== */
-
-                    </div>/* Reset & Base Styles */
-
-                    <h3>Project Implementation</h3>/* ==================== */
-
-                    <p>End-to-end project management ensuring successful delivery on time and within budget.</p>* {
-
-                    <ul class="service-features">    margin: 0;
-
-                        <li>Agile Methodology</li>    padding: 0;
-
-                        <li>Quality Assurance</li>    box-sizing: border-box;
-
-                        <li>Deployment Support</li>}
-
-                    </ul>
-
-                </div>html {
-
-                <div class="service-card">    scroll-behavior: smooth;
-
-                    <div class="service-icon">    font-size: 16px;
-
-                        <i class="fas fa-lightbulb"></i>}
-
-                    </div>
-
-                    <h3>Technical Consulting</h3>body {
-
-                    <p>Expert guidance to help you make informed technology decisions and strategy.</p>    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-                    <ul class="service-features">    background-color: var(--dark-bg);
-
-                        <li>Technology Strategy</li>    color: var(--text-primary);
-
-                        <li>Architecture Design</li>    line-height: 1.6;
-
-                        <li>Best Practices</li>    overflow-x: hidden;
-
-                    </ul>    position: relative;
-
-                </div>}
-
-                <div class="service-card">
-
-                    <div class="service-icon">body::before {
-
-                        <i class="fas fa-tools"></i>    content: '';
-
-                    </div>    position: fixed;
-
-                    <h3>Support & Maintenance</h3>    top: 0;
-
-                    <p>Ongoing support to keep your systems running smoothly and efficiently.</p>    left: 0;
-
-                    <ul class="service-features">    width: 100%;
-
-                        <li>24/7 Support</li>    height: 100%;
-
-                        <li>System Updates</li>    background-image: 
-
-                        <li>Performance Optimization</li>        radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.02) 1px, transparent 1px),
-
-                    </ul>        radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.02) 1px, transparent 1px);
-
-                </div>    background-size: 50px 50px;
-
-                <div class="service-card">    background-position: 0 0, 25px 25px;
-
-                    <div class="service-icon">    z-index: 0;
-
-                        <i class="fas fa-cloud"></i>    pointer-events: none;
-
-                    </div>}
-
-                    <h3>Cloud Solutions</h3>
-
-                    <p>Scalable cloud infrastructure and migration services for modern businesses.</p>/* ==================== */
-
-                    <ul class="service-features">/* Floating Background Shapes */
-
-                        <li>Cloud Migration</li>/* ==================== */
-
-                        <li>Infrastructure Setup</li>.bg-shapes {
-
-                        <li>Cloud Security</li>    position: fixed;
-
-                    </ul>    top: 0;
-
-                </div>    left: 0;
-
-            </div>    width: 100%;
-
-        </div>    height: 100%;
-
-    </section>    overflow: hidden;
-
-    z-index: 0;
-
-    <!-- About Section -->    pointer-events: none;
-
-    <section id="about" class="about">}
-
-        <div class="container">
-
-            <div class="about-content">.shape {
-
-                <div class="about-text">    position: absolute;
-
-                    <h2 class="section-title">About US Aura Solutions</h2>    filter: blur(90px);
-
-                    <p>We are a leading technology solutions provider specializing in software development, AI integration, and digital transformation. Our team of experts is dedicated to delivering innovative solutions that drive business success.</p>    opacity: 0.25;
-
-                    <p>With years of experience across various industries, we understand the unique challenges businesses face in today's digital landscape. Our approach combines cutting-edge technology with practical business insights to create solutions that deliver real value.</p>    animation: floatShape 25s ease-in-out infinite;
-
-                    <div class="stats">}
-
-                        <div class="stat-item">
-
-                            <h3 class="stat-number" data-target="100">0</h3>.shape-1 {
-
-                            <p>Projects Completed</p>    width: 500px;
-
-                        </div>    height: 500px;
-
-                        <div class="stat-item">    background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
-
-                            <h3 class="stat-number" data-target="50">0</h3>    top: 5%;
-
-                            <p>Happy Clients</p>    left: -5%;
-
-                        </div>    animation-duration: 30s;
-
-                        <div class="stat-item">}
-
-                            <h3 class="stat-number" data-target="15">0</h3>
-
-                            <p>Team Members</p>.shape-2 {
-
-                        </div>    width: 600px;
-
-                    </div>    height: 600px;
-
-                </div>    background: radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, transparent 70%);
-
-                <div class="about-image">    top: 50%;
-
-                    <div class="image-placeholder">    right: -5%;
-
-                        <i class="fas fa-laptop-code"></i>    animation-duration: 35s;
-
-                    </div>    animation-delay: 5s;
-
-                </div>}
-
-            </div>
-
-        </div>.shape-3 {
-
-    </section>    width: 450px;
-
-    height: 450px;
-
-    <!-- Reviews Section -->    background: radial-gradient(circle, rgba(59, 130, 246, 0.18) 0%, transparent 70%);
-
-    <section id="reviews" class="reviews">    bottom: 10%;
-
-        <div class="container">    left: 10%;
-
-            <div class="section-header">    animation-duration: 32s;
-
-                <h2 class="section-title">Client Reviews</h2>    animation-delay: 10s;
-
-                <p class="section-subtitle">What our clients say about working with us</p>}
-
-            </div>
-
-            <div class="reviews-grid">.shape-4 {
-
-                <div class="review-card">    width: 550px;
-
-                    <div class="review-header">    height: 550px;
-
-                        <div class="reviewer-info">    background: radial-gradient(circle, rgba(139, 92, 246, 0.22) 0%, transparent 70%);
-
-                            <div class="reviewer-avatar">    top: 35%;
-
-                                <i class="fas fa-user"></i>    right: 15%;
-
-                            </div>    animation-duration: 38s;
-
-                            <div>    animation-delay: 3s;
-
-                                <h4>Sarah Mitchell</h4>}
-
-                                <p class="reviewer-title">CEO, TechStart Inc.</p>
-
-                            </div>@keyframes floatShape {
-
-                        </div>    0%, 100% {
-
-                        <div class="rating">        transform: translate(0, 0) scale(1) rotate(0deg);
-
-                            <i class="fas fa-star"></i>    }
-
-                            <i class="fas fa-star"></i>    25% {
-
-                            <i class="fas fa-star"></i>        transform: translate(40px, -40px) scale(1.1) rotate(5deg);
-
-                            <i class="fas fa-star"></i>    }
-
-                            <i class="fas fa-star"></i>    50% {
-
-                        </div>        transform: translate(-30px, -50px) scale(0.95) rotate(-3deg);
-
-                    </div>    }
-
-                    <p class="review-text">"US Aura Solutions transformed our business with their innovative software solutions. Their team's expertise in AI and automation helped us increase efficiency by 40%. Highly recommend!"</p>    75% {
-
-                </div>        transform: translate(50px, 30px) scale(1.05) rotate(8deg);
-
-                <div class="review-card">    }
-
-                    <div class="review-header">}
-
-                        <div class="reviewer-info">
-
-                            <div class="reviewer-avatar">.container {
-
-                                <i class="fas fa-user"></i>    max-width: 1200px;
-
-                            </div>    margin: 0 auto;
-
-                            <div>    padding: 0 20px;
-
-                                <h4>Michael Chen</h4>    position: relative;
-
-                                <p class="reviewer-title">CTO, GlobalTech Solutions</p>    z-index: 1;
-
-                            </div>}
-
-                        </div>
-
-                        <div class="rating">/* ==================== */
-
-                            <i class="fas fa-star"></i>/* Navigation */
-
-                            <i class="fas fa-star"></i>/* ==================== */
-
-                            <i class="fas fa-star"></i>.navbar {
-
-                            <i class="fas fa-star"></i>    position: fixed;
-
-                            <i class="fas fa-star"></i>    top: 0;
-
-                        </div>    left: 0;
-
-                    </div>    width: 100%;
-
-                    <p class="review-text">"Working with US Aura Solutions was a game-changer for our company. Their cloud migration services were seamless, and their support team is always responsive and helpful."</p>    background: rgba(8, 8, 15, 0.95);
-
-                </div>    backdrop-filter: blur(10px);
-
-                <div class="review-card">    z-index: 1000;
-
-                    <div class="review-header">    padding: 1rem 0;
-
-                        <div class="reviewer-info">    border-bottom: 1px solid rgba(139, 92, 246, 0.15);
-
-                            <div class="reviewer-avatar">}
-
-                                <i class="fas fa-user"></i>
-
-                            </div>.nav-wrapper {
-
-                            <div>    display: flex;
-
-                                <h4>Emily Rodriguez</h4>    justify-content: space-between;
-
-                                <p class="reviewer-title">Director of Operations, InnovateCorp</p>    align-items: center;
-
-                            </div>}
-
-                        </div>
-
-                        <div class="rating">.logo {
-
-                            <i class="fas fa-star"></i>    display: flex;
-
-                            <i class="fas fa-star"></i>    align-items: center;
-
-                            <i class="fas fa-star"></i>    gap: 12px;
-
-                            <i class="fas fa-star"></i>    z-index: 10;
-
-                            <i class="fas fa-star"></i>    position: relative;
-
-                        </div>}
-
-                    </div>
-
-                    <p class="review-text">"Exceptional service from start to finish! US Aura Solutions delivered our custom enterprise application ahead of schedule and exceeded all our expectations. True professionals!"</p>.logo-img {
-
-                </div>    height: 60px;
-
-            </div>    width: auto;
-
-        </div>    max-width: 200px;
-
-    </section>    filter: drop-shadow(0 4px 12px rgba(139, 92, 246, 0.6)) 
-
-            drop-shadow(0 2px 6px rgba(6, 182, 212, 0.4))
-
-    <!-- Contact Section -->            brightness(1.15) 
-
-    <section id="contact" class="contact">            contrast(1.1);
-
-        <div class="container">    transition: var(--transition);
-
-            <div class="section-header">    image-rendering: -webkit-optimize-contrast;
-
-                <h2 class="section-title">Get In Touch</h2>    image-rendering: crisp-edges;
-
-                <p class="section-subtitle">Let's discuss how we can help transform your business</p>}
-
-            </div>
-
-            <div class="contact-content">.logo-img:hover {
-
-                <div class="contact-info">    filter: drop-shadow(0 6px 16px rgba(139, 92, 246, 0.8)) 
-
-                    <div class="contact-item">            drop-shadow(0 3px 8px rgba(6, 182, 212, 0.6))
-
-                        <i class="fas fa-envelope"></i>            brightness(1.25) 
-
-                        <div>            contrast(1.15);
-
-                            <h4>Email</h4>    transform: scale(1.05);
-
-                            <a href="mailto:info@usaurasolutionsllc.com">info@usaurasolutionsllc.com</a>}
-
-                        </div>
-
-                    </div>.logo-text-fallback {
-
-                    <div class="contact-item">    font-size: 1.5rem;
-
-                        <i class="fab fa-linkedin"></i>    font-weight: 700;
-
-                        <div>    background: var(--accent-gradient);
-
-                            <h4>LinkedIn</h4>    -webkit-background-clip: text;
-
-                            <a href="https://www.linkedin.com/company/usaurasolutions" target="_blank">linkedin.com/company/usaurasolutions</a>    -webkit-text-fill-color: transparent;
-
-                        </div>    background-clip: text;
-
-                    </div>    letter-spacing: -0.5px;
-
-                    <div class="contact-item">    display: none;
-
-                        <i class="fas fa-map-marker-alt"></i>}
-
-                        <div>
-
-                            <h4>Location</h4>.logo-text {
-
-                            <p>United States</p>    display: none;
-
-                        </div>}
-
-                    </div>
-
-                </div>.nav-menu {
-
-                <form class="contact-form">    display: flex;
-
-                    <div class="form-group">    list-style: none;
-
-                        <input type="text" placeholder="Your Name" required>    gap: 2.5rem;
-
-                    </div>    align-items: center;
-
-                    <div class="form-group">}
-
-                        <input type="email" placeholder="Your Email" required>
-
-                    </div>.btn-nav-cta {
-
-                    <div class="form-group">    background: var(--accent-gradient);
-
-                        <input type="text" placeholder="Subject">    color: var(--text-primary) !important;
-
-                    </div>    padding: 0.7rem 1.5rem;
-
-                    <div class="form-group">    border-radius: 6px;
-
-                        <textarea placeholder="Your Message" rows="5" required></textarea>    font-weight: 600;
-
-                    </div>    transition: var(--transition);
-
-                    <button type="submit" class="btn btn-primary">Send Message</button>}
-
-                </form>
-
-            </div>.btn-nav-cta:hover {
-
-        </div>    transform: translateY(-2px);
-
-    </section>    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.4);
-
-}
-
-    <!-- Footer -->
-
-    <footer class="footer">.btn-nav-cta::after {
-
-        <div class="container">    display: none;
-
-            <div class="footer-content">}
-
-                <div class="footer-section">
-
-                    <div class="logo">.nav-link {
-
-                        <img src="images/logo.png" alt="US Aura Solutions">    color: var(--text-secondary);
-
-                        <span>US Aura Solutions</span>    text-decoration: none;
-
-                    </div>    font-weight: 500;
-
-                    <p>Vision. Value. Velocity.</p>    transition: var(--transition);
-
-                    <p>Transforming businesses through innovative technology solutions.</p>    position: relative;
-
-                </div>}
-
-                <div class="footer-section">
-
-                    <h4>Quick Links</h4>.nav-link::after {
-
-                    <ul>    content: '';
-
-                        <li><a href="#home">Home</a></li>    position: absolute;
-
-                        <li><a href="#services">Services</a></li>    bottom: -5px;
-
-                        <li><a href="#about">About</a></li>    left: 0;
-
-                        <li><a href="#reviews">Reviews</a></li>    width: 0;
-
-                        <li><a href="#contact">Contact</a></li>    height: 2px;
-
-                    </ul>    background: var(--accent-gradient);
-
-                </div>    transition: var(--transition);
-
-                <div class="footer-section">}
-
-                    <h4>Services</h4>
-
-                    <ul>.nav-link:hover {
-
-                        <li><a href="#services">Software Solutions</a></li>    color: #c084fc;
-
-                        <li><a href="#services">AI & Automation</a></li>}
-
-                        <li><a href="#services">Project Implementation</a></li>
-
-                        <li><a href="#services">Technical Consulting</a></li>.nav-link:hover::after {
-
-                        <li><a href="#services">Support & Maintenance</a></li>    width: 100%;
-
-                    </ul>}
-
-                </div>
-
-                <div class="footer-section">.hamburger {
-
-                    <h4>Connect</h4>    display: none;
-
-                    <div class="social-links">    flex-direction: column;
-
-                        <a href="https://www.linkedin.com/company/usaurasolutions" target="_blank"><i class="fab fa-linkedin"></i></a>    gap: 5px;
-
-                        <a href="mailto:info@usaurasolutionsllc.com"><i class="fas fa-envelope"></i></a>    cursor: pointer;
-
-                    </div>}
-
-                </div>
-
-            </div>.hamburger span {
-
-            <div class="footer-bottom">    width: 25px;
-
-                <p>&copy; 2024 US Aura Solutions LLC. All rights reserved.</p>    height: 3px;
-
-            </div>    background: var(--text-primary);
-
-        </div>    transition: var(--transition);
-
-    </footer>}
-
-
-
-    <script src="script.js"></script>/* ==================== */
-
-</body>/* Hero Section */
-
-</html>/* ==================== */
-
-.hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding-top: 80px;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        linear-gradient(135deg, rgba(10, 14, 26, 0.95) 0%, rgba(5, 8, 16, 0.98) 100%),
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(139,92,246);stop-opacity:0.1"/><stop offset="100%" style="stop-color:rgb(6,182,212);stop-opacity:0.1"/></linearGradient></defs><rect fill="url(%23grad1)" width="1200" height="800"/><circle cx="200" cy="150" r="300" fill="rgba(139,92,246,0.03)"/><circle cx="1000" cy="600" r="400" fill="rgba(6,182,212,0.03)"/><path d="M0,400 Q300,350 600,400 T1200,400" stroke="rgba(139,92,246,0.1)" stroke-width="2" fill="none"/><path d="M0,450 Q300,500 600,450 T1200,450" stroke="rgba(6,182,212,0.08)" stroke-width="2" fill="none"/></svg>'),
-        radial-gradient(ellipse at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 70%, rgba(6, 182, 212, 0.12) 0%, transparent 50%);
-    background-size: cover, cover, 100% 100%, 100% 100%;
-    background-position: center;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.hero-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 92, 246, 0.02) 2px, rgba(139, 92, 246, 0.02) 4px),
-        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(6, 182, 212, 0.02) 2px, rgba(6, 182, 212, 0.02) 4px);
-    background-size: 100px 100px;
-    opacity: 0.5;
-}
-
-.hero-background::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: 800px;
-    background: 
-        radial-gradient(circle at 30% 40%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 70% 60%, rgba(6, 182, 212, 0.12) 0%, transparent 40%);
-    animation: pulse 8s ease-in-out infinite;
-    filter: blur(60px);
-}
-
-@keyframes pulse {
-    0%, 100% { 
-        transform: translate(-50%, -50%) scale(1); 
-        opacity: 0.6; 
-    }
-    50% { 
-        transform: translate(-50%, -50%) scale(1.15); 
-        opacity: 0.9; 
-    }
-}
-
-.hero-content {
-    text-align: center;
-    z-index: 1;
-    animation: fadeInUp 1s ease-out;
-    transition: transform 0.15s ease-out;
-    will-change: transform;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.hero-badge {
-    display: inline-block;
-    padding: 0.6rem 1.5rem;
-    background: rgba(139, 92, 246, 0.12);
-    border: 1px solid rgba(139, 92, 246, 0.3);
-    border-radius: 50px;
-    color: #c084fc;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-}
-
-.hero-subtitle-new {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-secondary-new {
-    background: transparent;
-    color: var(--text-primary);
-    border: 2px solid rgba(160, 160, 184, 0.3);
-    padding: 1.2rem 3rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    cursor: none !important;
-    font-size: 1.1rem;
-    display: inline-block;
-}
-
-.btn-secondary-new:hover {
-    border-color: var(--text-primary);
-    background: rgba(139, 92, 246, 0.08);
-    transform: translateY(-2px);
-}
-
-.trust-badges {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    margin-top: 4rem;
-    flex-wrap: wrap;
-}
-
-.trust-item {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-}
-
-.trust-item i {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero-title {
-    font-size: 5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    line-height: 1.1;
-    max-width: 1100px;
-    color: var(--text-primary);
-}
-
-.gradient-text {
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-    font-weight: 400;
-}
-
-.hero-description {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    max-width: 700px;
-    margin: 0 auto 2.5rem;
-    line-height: 1.8;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 1.2rem 3rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    cursor: none !important;
-    border: none;
-    font-size: 1.1rem;
-    display: inline-block;
-    will-change: transform;
-}
-
-.btn-primary {
-    background: var(--text-primary);
-    color: var(--dark-bg);
-    box-shadow: 0 4px 20px rgba(232, 232, 240, 0.15);
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(232, 232, 240, 0.25);
-    background: #f5f5f7;
-}
-
-.btn-large {
-    padding: 1.4rem 3.5rem;
-    font-size: 1.2rem;
-}
-
-.btn-full {
-    width: 100%;
-}
-
-.scroll-indicator {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
-}
-
-.scroll-indicator i {
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-    40% { transform: translateX(-50%) translateY(-10px); }
-    60% { transform: translateX(-50%) translateY(-5px); }
-}
-
-/* ==================== */
-/* Section Styles */
-/* ==================== */
-section {
-    padding: 120px 0;
-}
-
-.large-title {
-    font-size: 3.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-    color: var(--text-primary);
-}
-
-.large-title-dark {
-    font-size: 3.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-    max-width: 900px;
-    margin-bottom: 2rem;
-    color: var(--text-primary);
-}
-
-.section-title-white {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-    color: var(--text-primary);
-}
-
-/* ==================== */
-/* Stats Bar */
-/* ==================== */
-.stats-bar {
-    background: var(--card-bg);
-    padding: 60px 0;
-    border-top: 1px solid rgba(139, 92, 246, 0.12);
-    border-bottom: 1px solid rgba(139, 92, 246, 0.12);
-}
-
-.stats-bar-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-    text-align: center;
-}
-
-.stat-item {
-    padding: 1rem;
-}
-
-.stat-value {
-    font-size: 3.5rem;
-    font-weight: 700;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-
-/* ==================== */
-/* Intro Section */
-/* ==================== */
-.intro-section {
-    padding: 100px 0 60px;
-    background: var(--dark-bg);
-}
-
-.intro-subtitle {
-    text-align: center;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    margin-top: 2rem;
-    font-weight: 500;
-}
-
-.section-label {
-    font-size: 0.85rem;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-/* ==================== */
-/* Industries Section */
-/* ==================== */
-.industries-section {
-    padding: 100px 0;
-    background: var(--darker-bg);
-    position: relative;
-    overflow: hidden;
-}
-
-.industries-section::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px),
-        linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px);
-    background-size: 80px 80px;
-    opacity: 0.5;
-}
-
-.industries-section::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    width: 500px;
-    height: 500px;
-    background: 
-        radial-gradient(circle at center, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="60" fill="none" stroke="rgba(139,92,246,0.1)" stroke-width="1"/><circle cx="100" cy="100" r="80" fill="none" stroke="rgba(6,182,212,0.08)" stroke-width="1"/><line x1="100" y1="40" x2="100" y2="20" stroke="rgba(139,92,246,0.15)" stroke-width="2"/><line x1="160" y1="100" x2="180" y2="100" stroke="rgba(6,182,212,0.12)" stroke-width="2"/><circle cx="100" cy="100" r="4" fill="rgba(139,92,246,0.3)"/></svg>');
-    background-size: contain;
-    animation: floatSlow 20s ease-in-out infinite;
-    opacity: 0.6;
-}
-
-@keyframes floatSlow {
-    0%, 100% { 
-        transform: translate(0, 0) rotate(0deg); 
-    }
-    50% { 
-        transform: translate(20px, -20px) rotate(10deg); 
-    }
-}
-
-.industries-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.industry-item {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: var(--card-bg);
-    border-radius: 12px;
-    border: 1px solid rgba(139, 92, 246, 0.12);
-    transition: var(--transition);
-}
-
-.industry-item:hover {
-    border-color: rgba(139, 92, 246, 0.4);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-}
-
-.industry-item i {
-    font-size: 2.5rem;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 1rem;
-}
-
-.industry-item h4 {
-    color: var(--text-primary);
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-/* ==================== */
-/* Services Section */
-/* ==================== */
-.services {
-    background: var(--dark-bg);
-    padding: 80px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.services::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,50 L30,50 M70,50 L90,50 M50,10 L50,30 M50,70 L50,90" stroke="rgba(139,92,246,0.08)" stroke-width="1" fill="none"/><circle cx="50" cy="50" r="8" fill="none" stroke="rgba(6,182,212,0.1)" stroke-width="1"/><circle cx="10" cy="50" r="3" fill="rgba(139,92,246,0.15)"/><circle cx="90" cy="50" r="3" fill="rgba(6,182,212,0.12)"/></svg>');
-    background-size: 120px 120px;
-    opacity: 0.3;
-}
-
-.services::after {
-    content: '';
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    width: 600px;
-    height: 600px;
-    background: 
-        radial-gradient(circle at center, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
-        conic-gradient(from 45deg at 50% 50%, transparent 0deg, rgba(139, 92, 246, 0.05) 120deg, transparent 240deg);
-    border-radius: 50%;
-    filter: blur(50px);
-    animation: rotateGlow 35s linear infinite;
-}
-
-@keyframes rotateGlow {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 4rem 3rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.service-card {
-    padding: 0;
-    border: none;
-    background: transparent;
-    transition: transform 0.15s ease-out;
-    will-change: transform;
-}
-
-.service-card:hover {
-    transform: translateY(-5px) !important;
-}
-
-.service-icon-large {
-    font-size: 2.5rem;
-    color: var(--text-primary);
-    margin-bottom: 1.5rem;
-}
-
-.service-title-large {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-    color: var(--text-primary);
-    line-height: 1.3;
-}
-
-.service-subtitle {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 1.2rem;
-    font-weight: 600;
-}
-
-.service-description-large {
-    color: var(--text-secondary);
-    line-height: 1.7;
-    font-size: 1.1rem;
-}
-
-/* ==================== */
-/* About Section */
-/* ==================== */
-.about {
-    background: var(--darker-bg);
-    padding: 120px 0;
-}
-
-.about-content-new {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.about-text-new {
-    text-align: left;
-}
-
-.about-description-large {
-    color: var(--text-secondary);
-    margin-bottom: 1.8rem;
-    line-height: 1.9;
-    font-size: 1.2rem;
-}
-
-.about-description-large strong {
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-/* ==================== */
-/* Customer Spotlight */
-/* ==================== */
-.customer-spotlight {
-    background: var(--dark-bg);
-    padding: 120px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.customer-spotlight::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.04) 1px, transparent 1px),
-        radial-gradient(circle at 80% 70%, rgba(6, 182, 212, 0.04) 1px, transparent 1px);
-    background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;
-}
-
-.customer-spotlight::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 900px;
-    height: 900px;
-    background: 
-        radial-gradient(circle at 30% 40%, rgba(139, 92, 246, 0.06) 0%, transparent 35%),
-        radial-gradient(circle at 70% 60%, rgba(6, 182, 212, 0.06) 0%, transparent 35%),
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><polygon points="100,20 180,180 20,180" fill="none" stroke="rgba(139,92,246,0.06)" stroke-width="1"/><circle cx="100" cy="100" r="70" fill="none" stroke="rgba(6,182,212,0.05)" stroke-width="1"/></svg>');
-    background-size: 100% 100%, 100% 100%, contain;
-    animation: morphBlobs 25s ease-in-out infinite;
-    opacity: 0.7;
-}
-
-@keyframes morphBlobs {
-    0%, 100% { 
-        transform: translate(-50%, -50%) scale(1) rotate(0deg);
-        opacity: 0.7;
-    }
-    50% { 
-        transform: translate(-48%, -52%) scale(1.08) rotate(5deg);
-        opacity: 0.9;
-    }
-}
-
-.spotlight-label {
-    font-size: 0.85rem;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-}
-
-.spotlight-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
-}
-
-.spotlight-card {
-    background: var(--card-bg);
-    padding: 2.5rem;
-    border-radius: 16px;
-    border: 1px solid rgba(139, 92, 246, 0.15);
-    transition: transform 0.15s ease-out, border-color 0.3s ease, box-shadow 0.3s ease;
-    will-change: transform;
-}
-
-.spotlight-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(139, 92, 246, 0.4);
-    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.25);
-}
-
-.company-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.company-logo-icon {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
-    border: 1px solid rgba(139, 92, 246, 0.3);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.company-logo-icon i {
-    font-size: 1.3rem;
-    color: var(--secondary-color);
-}
-
-.company-name {
-    font-size: 1.1rem;
-    color: var(--text-primary);
-    margin: 0 0 0.25rem 0;
-    font-weight: 600;
-}
-
-.company-type {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin: 0;
-}
-
-.rating-stars {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    margin-bottom: 1.5rem;
-}
-
-.rating-stars i {
-    color: #fbbf24;
-    font-size: 0.9rem;
-}
-
-.rating-score {
-    margin-left: 0.5rem;
-    color: var(--text-primary);
-    font-weight: 600;
-    font-size: 0.95rem;
-}
-
-.spotlight-quote {
-    margin-bottom: 1.5rem;
-}
-
-.spotlight-quote i {
-    font-size: 2rem;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    opacity: 0.5;
-}
-
-.spotlight-text {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-}
-
-.spotlight-author {
-    font-size: 0.9rem;
-    color: var(--text-primary);
-    font-weight: 600;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(139, 92, 246, 0.12);
-    margin-bottom: 1.5rem;
-}
-
-.spotlight-author span {
-    color: var(--text-secondary);
-    font-weight: 400;
-    font-size: 0.85rem;
-}
-
-.spotlight-results {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.result-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-}
-
-.result-item i {
-    color: var(--secondary-color);
-    font-size: 0.9rem;
-}
-
-/* ==================== */
-/* Insights Section */
-/* ==================== */
-.insights-section {
-    padding: 120px 0;
-    background: var(--darker-bg);
-    position: relative;
-    overflow: hidden;
-}
-
-.insights-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect x="20" y="20" width="160" height="160" fill="none" stroke="rgba(139,92,246,0.04)" stroke-width="1"/><rect x="40" y="40" width="120" height="120" fill="none" stroke="rgba(6,182,212,0.04)" stroke-width="1"/><line x1="100" y1="0" x2="100" y2="200" stroke="rgba(139,92,246,0.02)" stroke-width="1"/><line x1="0" y1="100" x2="200" y2="100" stroke="rgba(6,182,212,0.02)" stroke-width="1"/></svg>');
-    background-size: 150px 150px;
-    opacity: 0.6;
-}
-
-.insights-section::after {
-    content: '';
-    position: absolute;
-    bottom: 15%;
-    right: 10%;
-    width: 500px;
-    height: 500px;
-    background: 
-        radial-gradient(ellipse at center, rgba(59, 130, 246, 0.1) 0%, transparent 60%),
-        radial-gradient(circle at 30% 70%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
-    filter: blur(60px);
-    animation: floatSlow 18s ease-in-out infinite;
-}
-
-.insights-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 4rem;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.insights-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
-}
-
-.insight-card {
-    background: var(--card-bg);
-    padding: 2.5rem;
-    border-radius: 12px;
-    border: 1px solid rgba(139, 92, 246, 0.12);
-    transition: var(--transition);
-}
-
-.insight-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(139, 92, 246, 0.3);
-    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.18);
-}
-
-.insight-category {
-    font-size: 0.75rem;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.insight-card h3 {
-    font-size: 1.5rem;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-    line-height: 1.4;
-    font-weight: 600;
-}
-
-.insight-card p {
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-}
-
-.insight-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: var(--transition);
-}
-
-.insight-link:hover {
-    gap: 0.8rem;
-}
-
-.insight-link i {
-    font-size: 0.9rem;
-}
-
-/* ==================== */
-/* Contact Section */
-/* ==================== */
-.contact {
-    background: var(--darker-bg);
-    padding: 120px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.03) 2px, transparent 2px),
-        radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.03) 2px, transparent 2px);
-    background-size: 80px 80px;
-    background-position: 0 0, 40px 40px;
-}
-
-.contact::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    height: 700px;
-    background: 
-        conic-gradient(from 0deg at 50% 50%, 
-            rgba(139, 92, 246, 0.08) 0deg, 
-            transparent 90deg,
-            rgba(6, 182, 212, 0.08) 180deg, 
-            transparent 270deg,
-            rgba(139, 92, 246, 0.08) 360deg),
-        radial-gradient(circle at center, rgba(59, 130, 246, 0.06) 0%, transparent 60%);
-    border-radius: 50%;
-    animation: spinGradient 30s linear infinite;
-    filter: blur(70px);
-}
-
-@keyframes spinGradient {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-.cta-section {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto 5rem;
-}
-
-.cta-label {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
-    font-weight: 600;
-}
-
-.cta-title {
-    font-size: 3.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    color: var(--text-primary);
-    line-height: 1.2;
-}
-
-.cta-description {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 3rem;
-}
-
-.contact-details-section {
-    margin-top: 5rem;
-}
-
-.contact-grid-new {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.contact-item-new {
-    text-align: center;
-}
-
-.contact-icon-new {
-    width: 60px;
-    height: 60px;
-    background: var(--card-bg);
-    border: 1px solid rgba(139, 92, 246, 0.2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-}
-
-.contact-icon-new i {
-    font-size: 1.5rem;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.contact-details-new h4 {
-    margin-bottom: 0.8rem;
-    color: var(--text-primary);
-    font-size: 1.1rem;
-}
-
-.contact-details-new a,
-.contact-details-new p {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: var(--transition);
-    font-size: 1rem;
-}
-
-.contact-details-new a:hover {
-    color: var(--primary-color);
-}
-
-/* ==================== */
-/* Footer */
-/* ==================== */
-.footer {
-    background: var(--dark-bg);
-    border-top: 1px solid rgba(139, 92, 246, 0.12);
-    padding: 5rem 0 2rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 4rem;
-    margin-bottom: 3rem;
-}
-
-.footer-logo-section {
-    max-width: 350px;
-}
-
-.footer-logo-section .logo {
-    margin-bottom: 1.5rem;
-}
-
-.footer-tagline {
-    color: var(--primary-color);
-    font-style: italic;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.footer-description {
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 2rem;
-}
-
-.social-links-footer {
-    display: flex;
-    gap: 1rem;
-}
-
-.social-links-footer .social-link {
-    width: 40px;
-    height: 40px;
-    background: var(--card-bg);
-    border: 1px solid rgba(139, 92, 246, 0.2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-.social-links-footer .social-link:hover {
-    background: var(--accent-gradient);
-    color: white;
-    border-color: transparent;
-    transform: translateY(-3px);
-}
-
-.footer-links-group h4 {
-    color: var(--text-primary);
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.footer-links-group ul {
-    list-style: none;
-}
-
-.footer-links-group li {
-    margin-bottom: 1rem;
-}
-
-.footer-links-group a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: var(--transition);
-    font-size: 0.95rem;
-}
-
-.footer-links-group a:hover {
-    color: var(--primary-color);
-    padding-left: 5px;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(139, 92, 246, 0.12);
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.footer-bottom-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.footer-bottom-links a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-.footer-bottom-links a:hover {
-    color: var(--primary-color);
-}
-
-/* ==================== */
-/* Responsive Design */
-/* ==================== */
-@media (max-width: 968px) {
-    .nav-menu {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        flex-direction: column;
-        background: rgba(10, 10, 20, 0.98);
-        width: 100%;
-        padding: 2rem;
-        transition: var(--transition);
-        border-bottom: 1px solid rgba(139, 92, 246, 0.2);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .large-title,
-    .large-title-dark,
-    .section-title-white,
-    .cta-title {
-        font-size: 2.5rem;
-    }
-
-    .stats-bar-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-grid-new {
-        grid-template-columns: 1fr;
-    }
-
-    .industries-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .spotlight-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .insights-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .footer-logo-section {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .footer-logo-section .logo {
-        justify-content: center;
-    }
-
-    .social-links-footer {
-        justify-content: center;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-bottom-links {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 2.2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .large-title,
-    .large-title-dark,
-    .section-title-white,
-    .cta-title {
-        font-size: 2rem;
-    }
-
-    .stats-bar-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-value {
-        font-size: 2.5rem;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 1rem 2rem;
-    }
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="US Aura Solutions - Vision. Value. Velocity. Leading provider of software solutions, AI automation, and technical consulting services.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>US Aura Solutions - Vision. Value. Velocity</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==================== */
+        /* CSS Variables */
+        /* ==================== */
+        :root {
+            --primary-color: #0066CC;
+            --secondary-color: #004B87;
+            --accent-color: #3399FF;
+            --white: #ffffff;
+            --black: #000000;
+            --light-blue: #F0F7FF;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-light: #6b6b6b;
+            --border-color: #e0e8f0;
+            --shadow-sm: 0 2px 10px rgba(0, 102, 204, 0.08);
+            --shadow-md: 0 5px 20px rgba(0, 102, 204, 0.12);
+            --shadow-lg: 0 10px 40px rgba(0, 102, 204, 0.15);
+        }
+
+        /* ==================== */
+        /* Reset & Base Styles */
+        /* ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--white);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-size: 16px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Performance optimizations */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ==================== */
+        /* Typography */
+        /* ==================== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--white);
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        /* ==================== */
+        /* Buttons */
+        /* ==================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid transparent;
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 0.3px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #C8102E;
+            color: var(--white);
+            box-shadow: 0 2px 8px rgba(200, 16, 46, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #A00D25;
+            box-shadow: 0 4px 12px rgba(200, 16, 46, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: #1e1e1e;
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.9);
+            color: #1e1e1e;
+            border-color: var(--white);
+        }
+
+        .btn-large {
+            padding: 16px 36px;
+            font-size: 1rem;
+        }
+
+        /* ==================== */
+        /* Header & Navigation */
+        /* ==================== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: transparent;
+            z-index: 1000;
+            box-shadow: none;
+            transition: all 0.4s ease;
+        }
+
+        header.scrolled {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            background: rgba(26, 26, 26, 0.98);
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 20px;
+            min-height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: 0;
+        }
+
+        .logo img {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--white);
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0.03em;
+            text-transform: none;
+            white-space: nowrap;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.9rem;
+            position: relative;
+            padding: 8px 4px;
+            transition: color 0.2s ease;
+            letter-spacing: 0.3px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--white);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--white);
+        }
+
+        /* ==================== */
+        /* Hero Section */
+        /* ==================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.pexels.com/photos/1166643/pexels-photo-1166643.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat fixed;
+            padding-top: 0;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 140px 0 120px;
+            position: relative;
+            z-index: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            border-radius: 30px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+        }
+
+        .highlight-text {
+            color: #ffffff;
+            position: relative;
+            font-weight: 900;
+            font-size: 5rem;
+        }
+
+        .hero-title strong {
+            font-weight: 900;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+            justify-content: center;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .hero-feature i {
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+
+        .hero-image {
+            display: none;
+        }
+
+        .hero-image img {
+            display: none;
+        }
+
+        .hero-image-overlay {
+            display: none;
+            display: none;
+        }
+
+        .overlay-stat h3 {
+            font-size: 3rem;
+            color: #C8102E;
+            margin: 0;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .overlay-stat p {
+            font-size: 0.95rem;
+            color: #4a4a4a;
+            margin: 0.5rem 0 0 0;
+            font-weight: 600;
+        }
+
+        /* ==================== */
+        /* Stats Section */
+        /* ==================== */
+        .stats {
+            padding: 60px 0;
+            background: var(--white);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* ==================== */
+        /* Section Titles */
+        /* ==================== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* ==================== */
+        /* Content Cards Section */
+        /* ==================== */
+        /* Content Cards Section */
+        /* ==================== */
+        .cards-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .content-card {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .content-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .content-card-body {
+            padding: 1.75rem;
+        }
+
+        .content-card h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.35rem;
+        }
+
+        .content-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ==================== */
+        /* Staffing Section */
+        /* ==================== */
+        .staffing-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .staffing-intro {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin: 3rem 0;
+            padding: 3rem;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .staffing-intro-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .staffing-intro-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .staffing-stats-mini {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .mini-stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .mini-stat h4 {
+            font-size: 2rem;
+            color: #C8102E;
+            margin-bottom: 0.5rem;
+            font-weight: 900;
+        }
+
+        .mini-stat p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .staffing-intro-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .staffing-categories {
+            margin: 4rem 0;
+        }
+
+        .categories-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+
+        .staffing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .staffing-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .staffing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .staffing-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #C8102E 0%, #A00D25 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .staffing-icon i {
+            font-size: 1.8rem;
+            color: var(--white);
+        }
+
+        .staffing-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .staffing-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .staffing-card ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .staffing-card ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #C8102E;
+            font-weight: bold;
+        }
+
+        /* Staffing Types */
+        .staffing-types {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: var(--white);
+            border-radius: 12px;
+        }
+
+        .types-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .type-card {
+            padding: 2rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .type-card:hover {
+            border-color: #C8102E;
+            box-shadow: var(--shadow-md);
+        }
+
+        .type-icon {
+            width: 70px;
+            height: 70px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .type-icon i {
+            font-size: 2rem;
+            color: #C8102E;
+        }
+
+        .type-card h4 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .type-card > p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .type-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .type-card ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .type-card ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #C8102E;
+            font-weight: bold;
+        }
+
+        /* Staffing Benefits */
+        .staffing-benefits {
+            margin: 4rem 0;
+        }
+
+        .staffing-benefits h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            align-items: flex-start;
+        }
+
+        .benefit-item i {
+            font-size: 1.8rem;
+            color: #C8102E;
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+        }
+
+        .benefit-item h5 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .benefit-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Staffing CTA */
+        .staffing-cta {
+            text-align: center;
+            padding: 4rem 3rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        .staffing-cta h3 {
+            font-size: 2.2rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .staffing-cta p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ==================== */
+        /* Services Tabs Section */
+        /* ==================== */
+        .services-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .tabs-container {
+            margin-top: 2.5rem;
+            position: relative;
+        }
+
+        /* Swipe Navigation Arrows */
+        .swipe-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(26, 26, 26, 0.8);
+            color: var(--white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .swipe-arrow:hover {
+            background: #C8102E;
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 16px rgba(200, 16, 46, 0.4);
+        }
+
+        .swipe-prev {
+            left: -25px;
+        }
+
+        .swipe-next {
+            right: -25px;
+        }
+
+        /* Swipe Indicators (Bubbles) */
+        .swipe-indicators {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-top: 2rem;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #d0d0d0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .indicator:hover {
+            background: #a0a0a0;
+            transform: scale(1.2);
+        }
+
+        .indicator.active {
+            background: #C8102E;
+            width: 14px;
+            height: 14px;
+            border-color: #C8102E;
+            box-shadow: 0 0 8px rgba(200, 16, 46, 0.4);
+        }
+
+        .tabs-nav {
+            display: none;
+        }
+
+        .tab-button {
+            padding: 1rem 1.75rem;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            transition: all 0.2s ease;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .tab-button:hover {
+            color: var(--primary-color);
+            background: rgba(0, 102, 204, 0.05);
+        }
+
+        .tab-button.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+            background: rgba(0, 102, 204, 0.05);
+        }
+
+        .tab-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        .tab-content.active {
+            display: block;
+            opacity: 1;
+            animation: fadeInSlide 0.5s ease-in-out;
+        }
+
+        @keyframes fadeInSlide {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .tab-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .tab-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tab-text p {
+            margin-bottom: 2rem;
+        }
+
+        .tab-text ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .tab-text ul li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .tab-text ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .tab-image {
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .tab-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ==================== */
+        /* Testimonials Section */
+        /* ==================== */
+        .testimonials {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-content {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .testimonial-author-info h4 {
+            color: var(--black);
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-author-info p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* ==================== */
+        /* Contact Section */
+        /* ==================== */
+        .contact {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 1.25rem;
+            padding: 1.25rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .contact-details p {
+            color: var(--text-secondary);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-family: 'Open Sans', sans-serif;
+            background: var(--white);
+            transition: border-color 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        /* ==================== */
+        /* Footer */
+        /* ==================== */
+        footer {
+            background: #2c2c2c;
+            color: #cccccc;
+            padding: 50px 0 25px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .footer-section h3 {
+            color: var(--white);
+            margin-bottom: 1.25rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section ul li a {
+            color: #b3b3b3;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 1.5rem;
+            text-align: center;
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 38px;
+            height: 38px;
+            background: #444;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: all 0.2s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* ==================== */
+        /* Responsive Design */
+        /* ==================== */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                background: linear-gradient(to bottom, #1a1a1a 0%, #2d3748 100%);
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 80px 0 60px;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-image {
+                height: 400px;
+            }
+
+            .hero-features {
+                margin-top: 2rem;
+                padding-top: 2rem;
+            }
+
+            .tab-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .staffing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .types-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .staffing-intro {
+                grid-template-columns: 1fr;
+            }
+
+            .staffing-intro-image img {
+                height: 300px;
+            }
+
+            .staffing-intro {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+
+            .staffing-stats-mini {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .staffing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .types-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .staffing-intro-image img {
+                height: 250px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-buttons .btn {
+                width: 100%;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: #1a1a1a;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                transition: left 0.3s ease;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            /* Reduce image sizes on mobile */
+            .content-card img,
+            .tab-image img {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: auto;
+                background: linear-gradient(to bottom, #1a1a1a 0%, #2d3748 100%);
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            .hero-image-overlay {
+                bottom: 15px;
+                right: 15px;
+                padding: 1.5rem;
+            }
+
+            .overlay-stat h3 {
+                font-size: 2rem;
+            }
+
+            .overlay-stat p {
+                font-size: 0.85rem;
+            }
+
+            .hero-features {
+                gap: 0.75rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tabs-nav {
+                flex-direction: column;
+            }
+
+            .swipe-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .swipe-prev {
+                left: 5px;
+            }
+
+            .swipe-next {
+                right: 5px;
+            }
+
+            .swipe-indicators {
+                margin-top: 1.5rem;
+                gap: 10px;
+            }
+
+            .indicator {
+                width: 10px;
+                height: 10px;
+            }
+
+            .indicator.active {
+                width: 12px;
+                height: 12px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .content-card img {
+                height: 180px;
+            }
+
+            /* Optimize sections padding */
+            .services-section,
+            .testimonials,
+            .cards-section,
+            .contact {
+                padding: 50px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Floating Background Shapes -->
-    <div class="bg-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <img src="images/logo.png" alt="US Aura Solutions Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span class="logo-text-fallback">US Aura Solutions</span>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#services" class="nav-link">Solutions</a></li>
-                    <li><a href="#industries" class="nav-link">Industries</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#insights" class="nav-link">Insights</a></li>
-                    <li><a href="#contact" class="nav-link btn-nav-cta">Contact Us</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo_us_aura_solutions.png" alt="US Aura Solutions">
+                <span class="logo-text">US Aura Solutions</span>
             </div>
-        </div>
-    </nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="#staffing" class="nav-link">Staffing</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">Your Partner for Digital Transformation</div>
-                <h1 class="hero-title">
-                    Technology that transforms.<br>
-                    <span class="gradient-text">Partners that deliver.</span>
-                </h1>
-                <p class="hero-subtitle-new">
-                    At US Aura Solutions, we merge your vision with our expertise to help you achieve 
-                    powerful results. For years, we've been empowering businesses with cutting-edge 
-                    technology solutions and strategic partnerships.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="#services" class="btn btn-secondary-new">Explore Solutions</a>
-                </div>
-                <div class="trust-badges">
-                    <div class="trust-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>98% Client Satisfaction</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Enterprise Security</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-award"></i>
-                        <span>Industry Leader</span>
+                <div class="hero-text">
+                    <h1 class="hero-title">Anything's possible when you have the <span class="highlight-text">talent</span></h1>
+                    <p class="hero-subtitle">Find skilled candidates, in-demand jobs and the solutions you need to help you do your best work yet.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-large">Find a job</a>
+                        <a href="#staffing" class="btn btn-secondary btn-large">Find talent</a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Stats Bar -->
-    <section class="stats-bar">
-        <div class="container">
-            <div class="stats-bar-grid">
-                <div class="stat-item">
-                    <div class="stat-value">100+</div>
-                    <div class="stat-label">Projects Delivered</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">50+</div>
-                    <div class="stat-label">Enterprise Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">24/7</div>
-                    <div class="stat-label">Support Available</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">5+</div>
-                    <div class="stat-label">Core Services</div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=1200&q=80" alt="Professional Woman" loading="eager">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Intro Section -->
-    <section class="intro-section">
+    <!-- Staffing Solutions Section -->
+    <section id="staffing" class="staffing-section">
         <div class="container">
-            <h2 class="large-title">We help businesses solve their most complex technology challenges with innovative solutions, delivered in weeks not months.</h2>
-            <p class="intro-subtitle">Trusted by Fortune 500 companies and innovative startups worldwide</p>
-        </div>
-    </section>
+            <div class="section-title">
+                <h2>Staffing Solutions</h2>
+                <p class="section-subtitle">Connect with specialized talent to drive your business forward</p>
+            </div>
 
-    <!-- Industries Section -->
-    <section id="industries" class="industries-section">
-        <div class="container">
-            <div class="section-label">INDUSTRIES WE SERVE</div>
-            <h2 class="section-title-white">Specialized expertise across multiple sectors</h2>
-            <div class="industries-grid">
-                <div class="industry-item">
-                    <i class="fas fa-hospital"></i>
-                    <h4>Healthcare</h4>
+            <div class="staffing-intro">
+                <div class="staffing-intro-content">
+                    <h3>Find the Right Talent for Every Need</h3>
+                    <p>We specialize in connecting companies with highly skilled technology professionals. Whether you need contract, contract-to-hire, or full-time talent, our extensive network and rigorous screening process ensure you get the right people for your projects.</p>
+                    <div class="staffing-stats-mini">
+                        <div class="mini-stat">
+                            <h4>10,000+</h4>
+                            <p>Candidates Placed</p>
+                        </div>
+                        <div class="mini-stat">
+                            <h4>95%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="mini-stat">
+                            <h4>48hrs</h4>
+                            <p>Average Match Time</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h4>Financial Services</h4>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h4>Retail & E-commerce</h4>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-industry"></i>
-                    <h4>Manufacturing</h4>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4>Education</h4>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-bolt"></i>
-                    <h4>Energy & Utilities</h4>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-landmark"></i>
-                    <h4>Government</h4>
-                </div>
-                <div class="industry-item">
-                    <i class="fas fa-broadcast-tower"></i>
-                    <h4>Telecommunications</h4>
+                <div class="staffing-intro-image">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80" alt="Staffing Solutions">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="services-grid">
-                <!-- Software Solutions -->
-                <div class="service-card">
-                    <div class="service-icon-large">
-                        <i class="fas fa-code"></i>
+            <!-- Staffing Categories -->
+            <div class="staffing-categories">
+                <h3 class="categories-title">Technology Staffing Expertise</h3>
+                
+                <div class="staffing-grid">
+                    <!-- Category 1 -->
+                    <div class="staffing-card">
+                        <div class="staffing-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Software Development</h4>
+                        <ul>
+                            <li>Full Stack Developers</li>
+                            <li>Frontend Engineers (React, Angular, Vue)</li>
+                            <li>Backend Developers (Node.js, Python, Java)</li>
+                            <li>Mobile Developers (iOS, Android, React Native)</li>
+                            <li>DevOps Engineers</li>
+                            <li>QA/Test Engineers</li>
+                        </ul>
                     </div>
-                    <h3 class="service-title-large">Built to handle complexity</h3>
-                    <h4 class="service-subtitle">Software Solutions</h4>
-                    <p class="service-description-large">
-                        Custom web, mobile, and enterprise software development tailored to your business requirements. 
-                        We build scalable, secure, and innovative applications that grow with your needs.
-                    </p>
-                </div>
 
-                <!-- AI & Automation -->
-                <div class="service-card">
-                    <div class="service-icon-large">
-                        <i class="fas fa-robot"></i>
+                    <!-- Category 2 -->
+                    <div class="staffing-card">
+                        <div class="staffing-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Data & AI Specialists</h4>
+                        <ul>
+                            <li>Data Scientists</li>
+                            <li>Machine Learning Engineers</li>
+                            <li>AI/ML Architects</li>
+                            <li>Data Engineers</li>
+                            <li>Business Intelligence Analysts</li>
+                            <li>Data Analysts</li>
+                        </ul>
                     </div>
-                    <h3 class="service-title-large">Extremely customizable</h3>
-                    <h4 class="service-subtitle">AI & Automation</h4>
-                    <p class="service-description-large">
-                        Fine-tune AI models and automation workflows to match your business. From intelligent chatbots 
-                        to workflow automation, harness the power of AI to transform operations.
-                    </p>
-                </div>
 
-                <!-- Project Implementation -->
-                <div class="service-card">
-                    <div class="service-icon-large">
-                        <i class="fas fa-rocket"></i>
+                    <!-- Category 3 -->
+                    <div class="staffing-card">
+                        <div class="staffing-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Cloud & Infrastructure</h4>
+                        <ul>
+                            <li>Cloud Architects (AWS, Azure, GCP)</li>
+                            <li>Cloud Engineers</li>
+                            <li>Site Reliability Engineers (SRE)</li>
+                            <li>Network Engineers</li>
+                            <li>Systems Administrators</li>
+                            <li>Infrastructure Engineers</li>
+                        </ul>
                     </div>
-                    <h3 class="service-title-large">End-to-end deployment</h3>
-                    <h4 class="service-subtitle">Project Implementation</h4>
-                    <p class="service-description-large">
-                        Full project management from planning to deployment. We handle your entire system 
-                        implementation with precision, ensuring smooth transitions and minimal disruption.
-                    </p>
-                </div>
 
-                <!-- Technical Consulting -->
-                <div class="service-card">
-                    <div class="service-icon-large">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3 class="service-title-large">Strategic guidance</h3>
-                    <h4 class="service-subtitle">Technical Consulting</h4>
-                    <p class="service-description-large">
-                        Expert advice on technology strategy, architecture decisions, and tool selection. 
-                        We help you make informed decisions that drive your business forward.
-                    </p>
-                </div>
-
-                <!-- Support & Maintenance -->
-                <div class="service-card">
-                    <div class="service-icon-large">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 class="service-title-large">Always available</h3>
-                    <h4 class="service-subtitle">Support & Maintenance</h4>
-                    <p class="service-description-large">
-                        24/7 technical support and maintenance services. Monitor, maintain, and optimize your 
-                        systems to ensure peak performance at all times.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content-new">
-                <div class="about-text-new">
-                    <h2 class="large-title-dark">Transform your business with technology that scales</h2>
-                    <p class="about-description-large">
-                        At US Aura Solutions, we believe in three core principles: <strong>Vision, Value, and Velocity</strong>. 
-                        We envision a future where technology seamlessly empowers businesses, we deliver exceptional value 
-                        through innovative solutions, and we move with velocity to bring your ideas to life.
-                    </p>
-                    <p class="about-description-large">
-                        Our team of expert developers, AI specialists, and technical consultants work tirelessly to transform 
-                        your business challenges into opportunities for growth.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Customer Spotlight -->
-    <section class="customer-spotlight">
-        <div class="container">
-            <div class="spotlight-label">CLIENT SUCCESS STORIES</div>
-            <h2 class="section-title-white">Delivering measurable results for leading organizations</h2>
-            <div class="spotlight-grid">
-                <div class="spotlight-card">
-                    <div class="company-header">
-                        <div class="company-logo-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div>
-                            <h3 class="company-name">Global Financial Services</h3>
-                            <p class="company-type">Fortune 500 Banking Corporation</p>
-                        </div>
-                    </div>
-                    <div class="rating-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="rating-score">5.0</span>
-                    </div>
-                    <div class="spotlight-quote">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="spotlight-text">
-                        "US Aura Solutions transformed our legacy systems into a modern, cloud-based infrastructure. 
-                        Their technical expertise and project management capabilities exceeded our expectations. 
-                        The AI-driven automation they implemented reduced our processing time by 60% while improving accuracy."
-                    </p>
-                    <div class="spotlight-author">
-                        <strong>Sarah Mitchell</strong><br>
-                        <span>Chief Technology Officer</span>
-                    </div>
-                    <div class="spotlight-results">
-                        <div class="result-item">
-                            <i class="fas fa-clock"></i>
-                            <span>60% Faster Processing</span>
-                        </div>
-                        <div class="result-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>40% Cost Reduction</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="spotlight-card">
-                    <div class="company-header">
-                        <div class="company-logo-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <div>
-                            <h3 class="company-name">MediTech Healthcare</h3>
-                            <p class="company-type">National Healthcare Provider</p>
-                        </div>
-                    </div>
-                    <div class="rating-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="rating-score">5.0</span>
-                    </div>
-                    <div class="spotlight-quote">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="spotlight-text">
-                        "The custom patient management system developed by US Aura Solutions has revolutionized our operations. 
-                        Their attention to HIPAA compliance and security best practices gave us complete confidence. 
-                        The support team is incredibly responsive and knowledgeable."
-                    </p>
-                    <div class="spotlight-author">
-                        <strong>Dr. James Rodriguez</strong><br>
-                        <span>VP of Digital Innovation</span>
-                    </div>
-                    <div class="spotlight-results">
-                        <div class="result-item">
-                            <i class="fas fa-users"></i>
-                            <span>500K+ Patients Managed</span>
-                        </div>
-                        <div class="result-item">
+                    <!-- Category 4 -->
+                    <div class="staffing-card">
+                        <div class="staffing-icon">
                             <i class="fas fa-shield-alt"></i>
-                            <span>100% HIPAA Compliant</span>
+                        </div>
+                        <h4>Cybersecurity</h4>
+                        <ul>
+                            <li>Security Architects</li>
+                            <li>Security Engineers</li>
+                            <li>Penetration Testers</li>
+                            <li>Security Analysts</li>
+                            <li>Compliance Specialists</li>
+                            <li>CISO/Security Directors</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="staffing-card">
+                        <div class="staffing-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>Project Management</h4>
+                        <ul>
+                            <li>Technical Project Managers</li>
+                            <li>Scrum Masters</li>
+                            <li>Product Owners</li>
+                            <li>Program Managers</li>
+                            <li>Agile Coaches</li>
+                            <li>Delivery Managers</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 6 -->
+                    <div class="staffing-card">
+                        <div class="staffing-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Design & UX</h4>
+                        <ul>
+                            <li>UI/UX Designers</li>
+                            <li>Product Designers</li>
+                            <li>Visual Designers</li>
+                            <li>UX Researchers</li>
+                            <li>Interaction Designers</li>
+                            <li>Design Systems Specialists</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Staffing Types -->
+            <div class="staffing-types">
+                <h3 class="types-title">Flexible Engagement Models</h3>
+                <div class="types-grid">
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <h4>Contract Staffing</h4>
+                        <p>Hire skilled professionals for short-term projects or peak workload periods. Flexible, cost-effective, and quick to deploy.</p>
+                        <ul>
+                            <li>Project-based assignments</li>
+                            <li>Seasonal workforce needs</li>
+                            <li>Specialized skill requirements</li>
+                            <li>Fast deployment (24-48 hours)</li>
+                        </ul>
+                    </div>
+
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4>Contract-to-Hire</h4>
+                        <p>Evaluate candidates on the job before making a permanent commitment. Reduce hiring risks and ensure cultural fit.</p>
+                        <ul>
+                            <li>Trial period assessment</li>
+                            <li>Cultural fit evaluation</li>
+                            <li>Skills validation</li>
+                            <li>Seamless conversion process</li>
+                        </ul>
+                    </div>
+
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Direct Hire</h4>
+                        <p>Find permanent employees who will become long-term assets to your organization. Comprehensive screening and matching.</p>
+                        <ul>
+                            <li>Executive search</li>
+                            <li>Permanent placements</li>
+                            <li>Leadership positions</li>
+                            <li>Cultural alignment focus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Our Staffing -->
+            <div class="staffing-benefits">
+                <h3>Why Choose Our Staffing Services</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h5>Pre-Vetted Talent</h5>
+                            <p>All candidates undergo rigorous technical assessments and background checks</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h5>Rapid Deployment</h5>
+                            <p>Access to qualified candidates within 24-48 hours</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h5>Industry Expertise</h5>
+                            <p>Specialized recruiters with deep technology domain knowledge</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h5>Flexible Terms</h5>
+                            <p>Contract, contract-to-hire, and permanent placement options</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h5>Quality Guarantee</h5>
+                            <p>90-day replacement guarantee for all placements</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h5>Ongoing Support</h5>
+                            <p>Dedicated account management and continuous candidate support</p>
                         </div>
                     </div>
                 </div>
-                <div class="spotlight-card">
-                    <div class="company-header">
-                        <div class="company-logo-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div>
-                            <h3 class="company-name">RetailPro Solutions</h3>
-                            <p class="company-type">E-commerce Platform Leader</p>
-                        </div>
-                    </div>
-                    <div class="rating-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="rating-score">5.0</span>
-                    </div>
-                    <div class="spotlight-quote">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="spotlight-text">
-                        "Working with US Aura Solutions was a game-changer for our e-commerce platform. 
-                        They implemented AI-powered recommendation engines and automated inventory management that increased our revenue by 45%. 
-                        Their consulting team provided strategic insights that shaped our entire digital roadmap."
-                    </p>
-                    <div class="spotlight-author">
-                        <strong>Michael Chen</strong><br>
-                        <span>Director of Technology</span>
-                    </div>
-                    <div class="spotlight-results">
-                        <div class="result-item">
-                            <i class="fas fa-rocket"></i>
-                            <span>45% Revenue Growth</span>
-                        </div>
-                        <div class="result-item">
-                            <i class="fas fa-thumbs-up"></i>
-                            <span>98% Customer Satisfaction</span>
-                        </div>
+            </div>
+
+            <div class="staffing-cta">
+                <h3>Ready to Build Your Team?</h3>
+                <p>Let us help you find the perfect talent for your organization</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Request Talent</a>
+                    <a href="#contact" class="btn btn-secondary btn-large">Talk to a Recruiter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="cards-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose US Aura Solutions</h2>
+                <p class="section-subtitle">We deliver exceptional results through innovation, expertise, and commitment to your success</p>
+            </div>
+            <div class="cards-grid">
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Innovative Solutions">
+                    <div class="content-card-body">
+                        <h3>Innovative Solutions</h3>
+                        <p>We leverage cutting-edge technologies and methodologies to deliver solutions that drive your business forward.</p>
                     </div>
                 </div>
-                <div class="spotlight-card">
-                    <div class="company-header">
-                        <div class="company-logo-icon">
-                            <i class="fas fa-industry"></i>
-                        </div>
-                        <div>
-                            <h3 class="company-name">Manufacturing Dynamics</h3>
-                            <p class="company-type">Industrial Automation Leader</p>
-                        </div>
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&q=80" alt="Expert Team">
+                    <div class="content-card-body">
+                        <h3>Expert Team</h3>
+                        <p>Our team of seasoned professionals brings decades of combined experience across various industries and technologies.</p>
                     </div>
-                    <div class="rating-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="rating-score">5.0</span>
-                    </div>
-                    <div class="spotlight-quote">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="spotlight-text">
-                        "US Aura Solutions deployed IoT sensors and predictive maintenance AI across our manufacturing facilities. 
-                        The results were immediate - downtime decreased by 70%, and we gained real-time visibility into our entire production chain. 
-                        Their ongoing support ensures we maximize our investment."
-                    </p>
-                    <div class="spotlight-author">
-                        <strong>Emily Thompson</strong><br>
-                        <span>COO & Operations Director</span>
-                    </div>
-                    <div class="spotlight-results">
-                        <div class="result-item">
-                            <i class="fas fa-tools"></i>
-                            <span>70% Less Downtime</span>
-                        </div>
-                        <div class="result-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>Real-time Monitoring</span>
-                        </div>
+                </div>
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Proven Track Record">
+                    <div class="content-card-body">
+                        <h3>Proven Track Record</h3>
+                        <p>With hundreds of successful projects delivered, we have the expertise to handle challenges of any scale.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Insights Section -->
-    <section id="insights" class="insights-section">
+    <!-- Services Section with Tabs -->
+    <section id="services" class="services-section">
         <div class="container">
-            <div class="insights-header">
-                <div>
-                    <div class="section-label">KNOWLEDGE CENTER</div>
-                    <h2 class="section-title-white">Latest insights & thought leadership</h2>
-                </div>
-                <a href="#" class="btn btn-secondary-new">View All Articles</a>
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions tailored to your business needs</p>
             </div>
-            <div class="insights-grid">
-                <div class="insight-card">
-                    <div class="insight-category">AI & AUTOMATION</div>
-                    <h3>Preparing your organization for generative AI transformation</h3>
-                    <p>Interest in AI is at an all-time high, but there is more to mastering this technology 
-                    than simply deploying the latest tools. Learn about data governance and quality practices.</p>
-                    <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+            
+            <div class="tabs-container">
+                <!-- Navigation Arrows -->
+                <button class="swipe-arrow swipe-prev" id="swipePrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="swipe-arrow swipe-next" id="swipeNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Tab 1: Software Solutions -->
+                <div class="tab-content active" id="software">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>Custom Software Solutions</h3>
+                            <p>Transform your business with enterprise-grade software solutions designed to meet your unique operational requirements. Our comprehensive development services deliver scalable, secure, and innovative applications that drive measurable business outcomes.</p>
+                            <ul>
+                                <li>Enterprise web application development</li>
+                                <li>Native mobile applications (iOS & Android)</li>
+                                <li>Cloud-native application architecture</li>
+                                <li>API development and microservices</li>
+                                <li>Legacy system modernization and migration</li>
+                                <li>Custom CRM and ERP solutions</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80" alt="Software Development">
+                        </div>
+                    </div>
                 </div>
-                <div class="insight-card">
-                    <div class="insight-category">CLOUD SOLUTIONS</div>
-                    <h3>How cloud migration drives business agility and growth</h3>
-                    <p>Discover strategic approaches to cloud migration that minimize disruption while 
-                    maximizing ROI. Learn from real-world implementation success stories.</p>
-                    <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+
+                <div class="tab-content" id="ai">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>AI & Intelligent Automation</h3>
+                            <p>Revolutionize your operations with artificial intelligence and intelligent automation solutions. We help businesses harness the power of AI to optimize processes, reduce costs, and unlock new opportunities for growth and innovation.</p>
+                            <ul>
+                                <li>Machine learning model development and deployment</li>
+                                <li>Natural language processing (NLP) solutions</li>
+                                <li>Computer vision and image recognition</li>
+                                <li>Robotic process automation (RPA)</li>
+                                <li>Predictive analytics and forecasting</li>
+                                <li>Intelligent chatbots and virtual assistants</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">Explore AI Solutions</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80" alt="AI Automation">
+                        </div>
+                    </div>
                 </div>
-                <div class="insight-card">
-                    <div class="insight-category">CYBERSECURITY</div>
-                    <h3>Building robust security frameworks for modern enterprises</h3>
-                    <p>As cyber threats evolve, organizations need comprehensive security strategies. 
-                    Explore best practices for protecting your digital assets and customer data.</p>
-                    <a href="#" class="insight-link">Read More <i class="fas fa-arrow-right"></i></a>
+
+                <div class="tab-content" id="implementation">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>Project Implementation & Deployment</h3>
+                            <p>Execute your technology initiatives with confidence through our proven project implementation methodology. From planning to deployment, we ensure seamless integration, minimal disruption, and successful adoption across your organization.</p>
+                            <ul>
+                                <li>Agile project management and execution</li>
+                                <li>DevOps and CI/CD pipeline implementation</li>
+                                <li>Cloud migration and infrastructure deployment</li>
+                                <li>System integration and data migration</li>
+                                <li>Quality assurance and testing services</li>
+                                <li>Change management and user training</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">Plan Your Implementation</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Project Implementation">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="consulting">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>Strategic Technical Consulting</h3>
+                            <p>Navigate complex technology decisions with expert guidance from our seasoned consultants. We provide strategic insights, architectural design, and technical leadership to help you make informed decisions that align with your business objectives.</p>
+                            <ul>
+                                <li>Technology strategy and roadmap development</li>
+                                <li>Enterprise architecture design and review</li>
+                                <li>Digital transformation consulting</li>
+                                <li>Security architecture and compliance</li>
+                                <li>Technology vendor selection and evaluation</li>
+                                <li>Performance optimization and scalability</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">Request Consultation</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Technical Consulting">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="support">
+                    <div class="tab-inner">
+                        <div class="tab-text">
+                            <h3>Enterprise Support & Maintenance</h3>
+                            <p>Ensure optimal performance and reliability with our comprehensive support and maintenance services. Our dedicated team provides proactive monitoring, rapid issue resolution, and continuous improvement to keep your systems running at peak efficiency.</p>
+                            <ul>
+                                <li>24/7 monitoring and incident response</li>
+                                <li>Proactive system health checks and optimization</li>
+                                <li>Security patches and vulnerability management</li>
+                                <li>Performance tuning and capacity planning</li>
+                                <li>Regular updates and feature enhancements</li>
+                                <li>Dedicated technical account management</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">View Support Plans</a>
+                        </div>
+                        <div class="tab-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Support & Maintenance">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swipe Indicators (Bubbles) -->
+                <div class="swipe-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                    <span class="indicator" data-index="3"></span>
+                    <span class="indicator" data-index="4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Success Stories</h2>
+                <p class="section-subtitle">Hear what our clients have to say about working with us</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "US Aura Solutions transformed our legacy systems into a modern, cloud-based infrastructure. Their technical expertise and project management capabilities exceeded our expectations."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Sarah Mitchell">
+                        <div class="testimonial-author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>CTO, Global Financial Services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The AI automation solution they developed has revolutionized our operations. We've seen a 60% reduction in processing time while improving accuracy."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80" alt="Dr. James Rodriguez">
+                        <div class="testimonial-author-info">
+                            <h4>Dr. James Rodriguez</h4>
+                            <p>VP of Innovation, Healthcare Tech</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Working with US Aura Solutions was a game-changer. Their consulting team provided strategic insights that shaped our entire digital roadmap."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Michael Chen">
+                        <div class="testimonial-author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Director of Technology, E-Commerce</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2359,593 +1990,285 @@ section {
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="cta-section">
-                <div class="cta-label">GET A PERSONALIZED DEMO</div>
-                <h2 class="cta-title">Ready to see US Aura Solutions in action?</h2>
-                <p class="cta-description">
-                    Our solutions handle complex workflows at scale, from custom software development to AI automation, 
-                    while maintaining high accuracy and performance in production.
-                </p>
-                <a href="mailto:info@usaurasolutionsllc.com" class="btn btn-primary btn-large">Talk to us</a>
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">Ready to transform your business with cutting-edge technology?</p>
             </div>
-            
-            <div class="contact-details-section">
-                <div class="contact-grid-new">
-                    <div class="contact-item-new">
-                        <div class="contact-icon-new">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-details-new">
+                        <div class="contact-details">
                             <h4>Email Us</h4>
-                            <a href="mailto:info@usaurasolutionsllc.com">info@usaurasolutionsllc.com</a>
+                            <p>info@usaurasolutionsllc.com</p>
                         </div>
                     </div>
-                    <div class="contact-item-new">
-                        <div class="contact-icon-new">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="contact-details-new">
+                        <div class="contact-details">
                             <h4>Call Us</h4>
-                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            <p>+1 (234) 567-890</p>
                         </div>
                     </div>
-                    <div class="contact-item-new">
-                        <div class="contact-icon-new">
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <div class="contact-details-new">
+                        <div class="contact-details">
                             <h4>Visit Us</h4>
-                            <p>United States</p>
+                            <p>123 Innovation Drive<br>Tech City, TC 12345</p>
                         </div>
                     </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option>Software Development</option>
+                                <option>AI Automation</option>
+                                <option>Technical Consulting</option>
+                                <option>Cloud Solutions</option>
+                                <option>Data Analytics</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo-section">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="US Aura Solutions Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="logo-text-fallback">US Aura Solutions</span>
-                    </div>
-                    <p class="footer-tagline">Vision. Value. Velocity.</p>
-                    <p class="footer-description">
-                        At US Aura Solutions, we specialize in creating custom software solutions that drive 
-                        digital transformation and business growth.
-                    </p>
-                    <div class="social-links-footer">
-                        <a href="https://www.linkedin.com/company/usaurasolutions" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links-group">
-                    <h4>Solutions</h4>
+                <div class="footer-section">
+                    <h3>Services</h3>
                     <ul>
+                        <li><a href="#staffing">Staffing Solutions</a></li>
+                        <li><a href="#staffing">Contract Talent</a></li>
+                        <li><a href="#staffing">Permanent Talent</a></li>
+                        <li><a href="#services">Consulting Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Areas of Expertise</h3>
+                    <ul>
+                        <li><a href="#staffing">Technology</a></li>
                         <li><a href="#services">Software Development</a></li>
                         <li><a href="#services">AI & Automation</a></li>
-                        <li><a href="#services">Project Implementation</a></li>
-                        <li><a href="#services">Technical Consulting</a></li>
-                        <li><a href="#services">Support & Maintenance</a></li>
+                        <li><a href="#services">Cloud & Infrastructure</a></li>
+                        <li><a href="#services">Data & Analytics</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-group">
-                    <h4>Industries</h4>
+                <div class="footer-section">
+                    <h3>Resources</h3>
                     <ul>
-                        <li><a href="#industries">Healthcare</a></li>
-                        <li><a href="#industries">Financial Services</a></li>
-                        <li><a href="#industries">Retail</a></li>
-                        <li><a href="#industries">Manufacturing</a></li>
-                        <li><a href="#industries">Education</a></li>
+                        <li><a href="#about">Discover Insights</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#testimonials">Client Stories</a></li>
+                        <li><a href="#services">Service Portfolio</a></li>
+                        <li><a href="#about">Case Studies</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-group">
-                    <h4>Company</h4>
+                <div class="footer-section">
+                    <h3>About</h3>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#insights">Insights</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#about">About US Aura Solutions</a></li>
+                        <li><a href="#about">Leadership</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#contact">Locations</a></li>
+                        <li><a href="#">Press</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 US Aura Solutions. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Accessibility</a>
-                    <a href="#">Sitemap</a>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="X (Twitter)">
+                        <svg style="width: 16px; height: 16px; fill: currentColor;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
+                <p>&copy; 2024 US Aura Solutions LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
-    <script>// ==================== //
-// Custom Cursor Effect
-// ==================== //
-const cursor = document.createElement('div');
-const cursorFollower = document.createElement('div');
-
-cursor.className = 'custom-cursor';
-cursorFollower.className = 'cursor-follower';
-
-document.body.appendChild(cursor);
-document.body.appendChild(cursorFollower);
-
-let mouseX = 0;
-let mouseY = 0;
-let cursorX = 0;
-let cursorY = 0;
-let followerX = 0;
-let followerY = 0;
-
-// Track mouse position
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-// Animate cursor with smooth following effect
-function animateCursor() {
-    // Main cursor follows immediately
-    cursorX += (mouseX - cursorX) * 0.3;
-    cursorY += (mouseY - cursorY) * 0.3;
-    
-    // Follower has delay for trailing effect
-    followerX += (mouseX - followerX) * 0.1;
-    followerY += (mouseY - followerY) * 0.1;
-    
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-    
-    cursorFollower.style.left = followerX + 'px';
-    cursorFollower.style.top = followerY + 'px';
-    
-    requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
-
-// Add hover effects on interactive elements
-const interactiveElements = document.querySelectorAll('a, button, .service-card, .nav-link');
-
-interactiveElements.forEach(element => {
-    element.addEventListener('mouseenter', () => {
-        cursor.classList.add('cursor-hover');
-        cursorFollower.classList.add('cursor-hover');
-    });
-    
-    element.addEventListener('mouseleave', () => {
-        cursor.classList.remove('cursor-hover');
-        cursorFollower.classList.remove('cursor-hover');
-    });
-});
-
-// Hide cursor when leaving window
-document.addEventListener('mouseleave', () => {
-    cursor.style.opacity = '0';
-    cursorFollower.style.opacity = '0';
-});
-
-document.addEventListener('mouseenter', () => {
-    cursor.style.opacity = '1';
-    cursorFollower.style.opacity = '1';
-});
-
-// ==================== //
-// Navigation Toggle
-// ==================== //
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
-const navLinks = document.querySelectorAll('.nav-link');
-
-// Toggle mobile menu
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    
-    // Animate hamburger
-    const spans = hamburger.querySelectorAll('span');
-    if (navMenu.classList.contains('active')) {
-        spans[0].style.transform = 'rotate(45deg) translateY(10px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translateY(-10px)';
-    } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-    }
-});
-
-// Close menu when clicking on a link
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        const spans = hamburger.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-    });
-});
-
-// ==================== //
-// Smooth Scroll with Offset
-// ==================== //
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const offset = 80; // Height of fixed navbar
-            const targetPosition = target.offsetTop - offset;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-// ==================== //
-// Navbar Background on Scroll
-// ==================== //
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(10, 10, 20, 0.98)';
-        navbar.style.boxShadow = '0 5px 30px rgba(168, 85, 247, 0.2)';
-    } else {
-        navbar.style.background = 'rgba(10, 10, 20, 0.95)';
-        navbar.style.boxShadow = 'none';
-    }
-});
-
-// ==================== //
-// Active Navigation Link
-// ==================== //
-const sections = document.querySelectorAll('section');
-const navLinksAll = document.querySelectorAll('.nav-link');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinksAll.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// ==================== //
-// Scroll Animations
-// ==================== //
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe service cards
-const serviceCards = document.querySelectorAll('.service-card');
-serviceCards.forEach((card, index) => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(30px)';
-    card.style.transition = `all 0.6s ease ${index * 0.1}s`;
-    observer.observe(card);
-});
-
-// Observe about section
-const aboutContent = document.querySelector('.about-content');
-if (aboutContent) {
-    aboutContent.style.opacity = '0';
-    aboutContent.style.transform = 'translateY(30px)';
-    aboutContent.style.transition = 'all 0.8s ease';
-    observer.observe(aboutContent);
-}
-
-// ==================== //
-// Contact Form Handling
-// ==================== //
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    // Simple validation
-    if (!name || !email || !subject || !message) {
-        showNotification('Please fill in all fields', 'error');
-        return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        showNotification('Please enter a valid email address', 'error');
-        return;
-    }
-    
-    // Simulate form submission
-    const submitButton = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitButton.textContent;
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
-    
-    // Simulate API call (replace with actual API endpoint)
-    setTimeout(() => {
-        showNotification('Message sent successfully! We will get back to you soon.', 'success');
-        contactForm.reset();
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-    }, 1500);
-});
-
-// ==================== //
-// Notification System
-// ==================== //
-function showNotification(message, type = 'success') {
-    // Remove existing notifications
-    const existingNotification = document.querySelector('.notification');
-    if (existingNotification) {
-        existingNotification.remove();
-    }
-    
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.textContent = message;
-    
-    // Add styles
-    notification.style.cssText = `
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        background: ${type === 'success' ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)' : 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)'};
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        z-index: 10000;
-        animation: slideInRight 0.3s ease-out;
-        max-width: 300px;
-        font-size: 0.95rem;
-    `;
-    
-    document.body.appendChild(notification);
-    
-    // Auto remove after 4 seconds
-    setTimeout(() => {
-        notification.style.animation = 'slideOutRight 0.3s ease-out';
-        setTimeout(() => notification.remove(), 300);
-    }, 4000);
-}
-
-// Add animation styles
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideInRight {
-        from {
-            transform: translateX(400px);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideOutRight {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(400px);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
-
-// ==================== //
-// Parallax Effect on Hero
-// ==================== //
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const heroBackground = document.querySelector('.hero-background');
-    if (heroBackground) {
-        heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
-
-// ==================== //
-// Mouse Movement Parallax Effect
-// ==================== //
-document.addEventListener('mousemove', (e) => {
-    const mouseXPercentage = (e.clientX / window.innerWidth) - 0.5;
-    const mouseYPercentage = (e.clientY / window.innerHeight) - 0.5;
-    
-    // Apply parallax to service cards
-    const serviceCards = document.querySelectorAll('.service-card');
-    serviceCards.forEach((card, index) => {
-        const depth = (index % 3 + 1) * 10;
-        const moveX = mouseXPercentage * depth;
-        const moveY = mouseYPercentage * depth;
-        card.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    });
-    
-    // Apply subtle parallax to hero content
-    const heroContent = document.querySelector('.hero-content');
-    if (heroContent) {
-        const moveX = mouseXPercentage * 20;
-        const moveY = mouseYPercentage * 20;
-        heroContent.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    }
-    
-    // Apply parallax to spotlight card
-    const spotlightCard = document.querySelector('.spotlight-card');
-    if (spotlightCard) {
-        const moveX = mouseXPercentage * 15;
-        const moveY = mouseYPercentage * 15;
-        spotlightCard.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    }
-});
-
-// ==================== //
-// Magnetic Button Effect
-// ==================== //
-const buttons = document.querySelectorAll('.btn');
-
-buttons.forEach(button => {
-    button.addEventListener('mousemove', (e) => {
-        const rect = button.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
+    <script>
+        // Header scroll effect
+        const header = document.querySelector('header');
         
-        button.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
-    });
-    
-    button.addEventListener('mouseleave', () => {
-        button.style.transform = 'translate(0, 0)';
-    });
-});
-
-// ==================== //
-// Stats Counter Animation
-// ==================== //
-const stats = document.querySelectorAll('.stat-number');
-const statsSection = document.querySelector('.about-stats');
-
-let statsAnimated = false;
-
-const animateStats = () => {
-    if (statsAnimated) return;
-    
-    const statsSectionTop = statsSection.offsetTop;
-    const statsSectionHeight = statsSection.clientHeight;
-    const windowHeight = window.innerHeight;
-    
-    if (window.pageYOffset > statsSectionTop - windowHeight + statsSectionHeight / 2) {
-        stats.forEach(stat => {
-            const target = stat.textContent;
-            const isNumber = /^\d+$/.test(target);
-            
-            if (isNumber) {
-                let count = 0;
-                const increment = Math.ceil(parseInt(target) / 50);
-                const timer = setInterval(() => {
-                    count += increment;
-                    if (count >= parseInt(target)) {
-                        stat.textContent = target;
-                        clearInterval(timer);
-                    } else {
-                        stat.textContent = count;
-                    }
-                }, 30);
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
         });
-        statsAnimated = true;
-    }
-};
 
-if (statsSection) {
-    window.addEventListener('scroll', animateStats);
-}
+        // Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
 
-// ==================== //
-// Back to Top Button (Optional)
-// ==================== //
-const createBackToTopButton = () => {
-    const button = document.createElement('button');
-    button.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    button.className = 'back-to-top';
-    button.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        background: linear-gradient(135deg, #a855f7 0%, #22d3ee 100%);
-        border: none;
-        border-radius: 50%;
-        color: white;
-        font-size: 1.2rem;
-        cursor: pointer;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 999;
-        box-shadow: 0 5px 20px rgba(168, 85, 247, 0.4);
-    `;
-    
-    button.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    
-    document.body.appendChild(button);
-    
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 500) {
-            button.style.opacity = '1';
-            button.style.visibility = 'visible';
-        } else {
-            button.style.opacity = '0';
-            button.style.visibility = 'hidden';
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Tabs functionality with Swipe Navigation
+        const tabContents = document.querySelectorAll('.tab-content');
+        const indicators = document.querySelectorAll('.indicator');
+        const swipePrev = document.getElementById('swipePrev');
+        const swipeNext = document.getElementById('swipeNext');
+        let currentTabIndex = 0;
+
+        // Create array of tab IDs
+        const tabIds = ['software', 'ai', 'implementation', 'consulting', 'support'];
+
+        function switchToTab(index) {
+            if (index < 0 || index >= tabIds.length) return;
+            
+            currentTabIndex = index;
+            const tabId = tabIds[index];
+            
+            // Remove active class from all contents and indicators
+            tabContents.forEach(content => content.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            
+            // Add active class to current items
+            document.getElementById(tabId).classList.add('active');
+            indicators[index].classList.add('active');
+            
+            // Add smooth transition effect
+            const activeContent = document.getElementById(tabId);
+            activeContent.style.opacity = '0';
+            setTimeout(() => {
+                activeContent.style.opacity = '1';
+            }, 50);
         }
-    });
-    
-    button.addEventListener('mouseenter', () => {
-        button.style.transform = 'scale(1.1)';
-    });
-    
-    button.addEventListener('mouseleave', () => {
-        button.style.transform = 'scale(1)';
-    });
-};
 
-createBackToTopButton();
+        // Arrow navigation
+        swipePrev.addEventListener('click', () => {
+            const newIndex = currentTabIndex > 0 ? currentTabIndex - 1 : tabIds.length - 1;
+            switchToTab(newIndex);
+        });
 
-// ==================== //
-// Loading Animation
-// ==================== //
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    setTimeout(() => {
-        document.body.style.transition = 'opacity 0.5s ease';
-        document.body.style.opacity = '1';
-    }, 100);
-});
+        swipeNext.addEventListener('click', () => {
+            const newIndex = currentTabIndex < tabIds.length - 1 ? currentTabIndex + 1 : 0;
+            switchToTab(newIndex);
+        });
 
-console.log('ðŸš€ US Aura Solutions - Website Loaded Successfully!');
-console.log('Vision. Value. Velocity.');
-</script>
+        // Indicator clicks
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                switchToTab(index);
+            });
+        });
+
+        // Touch swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const tabsContainer = document.querySelector('.tabs-container');
+
+        tabsContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        tabsContainer.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) {
+                // Swipe left - next tab
+                const newIndex = currentTabIndex < tabIds.length - 1 ? currentTabIndex + 1 : 0;
+                switchToTab(newIndex);
+            }
+            if (touchEndX > touchStartX + 50) {
+                // Swipe right - previous tab
+                const newIndex = currentTabIndex > 0 ? currentTabIndex - 1 : tabIds.length - 1;
+                switchToTab(newIndex);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                const newIndex = currentTabIndex > 0 ? currentTabIndex - 1 : tabIds.length - 1;
+                switchToTab(newIndex);
+            } else if (e.key === 'ArrowRight') {
+                const newIndex = currentTabIndex < tabIds.length - 1 ? currentTabIndex + 1 : 0;
+                switchToTab(newIndex);
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 

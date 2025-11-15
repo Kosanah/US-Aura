@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - US Aura Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #C8102E;
+            --dark-bg: #1a1a1a;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --text-dark: #2c3e50;
+            --text-gray: #666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--dark-bg);
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            transition: all 0.4s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 20px;
+            min-height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: 0;
+        }
+
+        .logo img {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--white);
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0.03em;
+            text-transform: none;
+            white-space: nowrap;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            padding: 8px 0;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--white);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .careers-hero {
+            padding: 150px 0 80px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .careers-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .careers-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Job Listings Section */
+        .jobs-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Job Filters */
+        .job-filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 12px 28px;
+            background: var(--white);
+            color: var(--text-dark);
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+
+        /* Job Cards */
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .job-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .job-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .job-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .job-meta i {
+            color: var(--primary-color);
+        }
+
+        .job-description {
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .job-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .job-tag {
+            padding: 6px 14px;
+            background: #f0f0f0;
+            color: var(--text-dark);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+
+        .apply-btn:hover {
+            background: #A00D25;
+            border-color: #A00D25;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), #E81B3D);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .benefit-icon i {
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+        .benefit-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            color: var(--white);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .careers-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .careers-hero p {
+                font-size: 1.1rem;
+            }
+
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .job-filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filter-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo_us_aura_solutions.png" alt="US Aura Solutions">
+                <span class="logo-text">US Aura Solutions</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#staffing" class="nav-link">Staffing</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="careers.html" class="nav-link active">Careers</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="careers-hero">
+        <div class="container">
+            <h1>Careers With Us</h1>
+            <p>Join our talented team and build a rewarding career in technology and innovation. We're looking for passionate professionals to help shape the future.</p>
+            <a href="post-job.html" style="display: inline-block; margin-top: 1.5rem; padding: 14px 32px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; border: 2px solid white; transition: all 0.3s ease;">
+                <i class="fas fa-plus-circle"></i> Post New Job
+            </a>
+        </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section class="jobs-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Open Positions</h2>
+                <p class="section-subtitle">Explore opportunities across our technology and consulting teams</p>
+            </div>
+
+            <!-- Job Filters -->
+            <div class="job-filters">
+                <button class="filter-btn active" data-filter="all">All Positions</button>
+                <button class="filter-btn" data-filter="engineering">Engineering</button>
+                <button class="filter-btn" data-filter="data">Data & AI</button>
+                <button class="filter-btn" data-filter="consulting">Consulting</button>
+                <button class="filter-btn" data-filter="support">Support</button>
+            </div>
+
+            <!-- Jobs Grid -->
+            <div class="jobs-grid">
+                <!-- Job Card 1 -->
+                <div class="job-card" data-category="engineering">
+                    <div class="job-header">
+                        <h3 class="job-title">Senior Software Engineer</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Remote / Hybrid</span>
+                            <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                            <span><i class="fas fa-clock"></i> Posted 2 days ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        We're seeking an experienced software engineer to join our development team. You'll work on cutting-edge projects using modern technologies and frameworks.
+                    </p>
+                    <div class="job-tags">
+                        <span class="job-tag">Python</span>
+                        <span class="job-tag">JavaScript</span>
+                        <span class="job-tag">Cloud</span>
+                        <span class="job-tag">Agile</span>
+                    </div>
+                    <a href="#contact" class="apply-btn">Apply Now</a>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="job-card" data-category="data">
+                    <div class="job-header">
+                        <h3 class="job-title">Data Scientist</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                            <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                            <span><i class="fas fa-clock"></i> Posted 5 days ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Join our AI team to develop machine learning models and data-driven solutions. Help clients unlock insights from their data.
+                    </p>
+                    <div class="job-tags">
+                        <span class="job-tag">Python</span>
+                        <span class="job-tag">Machine Learning</span>
+                        <span class="job-tag">SQL</span>
+                        <span class="job-tag">TensorFlow</span>
+                    </div>
+                    <a href="#contact" class="apply-btn">Apply Now</a>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="job-card" data-category="engineering">
+                    <div class="job-header">
+                        <h3 class="job-title">Cloud Solutions Architect</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                            <span><i class="fas fa-clock"></i> Posted 1 week ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Design and implement scalable cloud infrastructure solutions for enterprise clients. Lead architecture discussions and mentor junior team members.
+                    </p>
+                    <div class="job-tags">
+                        <span class="job-tag">AWS</span>
+                        <span class="job-tag">Azure</span>
+                        <span class="job-tag">Kubernetes</span>
+                        <span class="job-tag">DevOps</span>
+                    </div>
+                    <a href="#contact" class="apply-btn">Apply Now</a>
+                </div>
+
+                <!-- Job Card 4 -->
+                <div class="job-card" data-category="consulting">
+                    <div class="job-header">
+                        <h3 class="job-title">Technical Consultant</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span>
+                            <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                            <span><i class="fas fa-clock"></i> Posted 3 days ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Work directly with clients to understand their technology needs and deliver strategic solutions. Bridge the gap between business and technology.
+                    </p>
+                    <div class="job-tags">
+                        <span class="job-tag">Strategy</span>
+                        <span class="job-tag">Client Relations</span>
+                        <span class="job-tag">Technology</span>
+                        <span class="job-tag">Leadership</span>
+                    </div>
+                    <a href="#contact" class="apply-btn">Apply Now</a>
+                </div>
+
+                <!-- Job Card 5 -->
+                <div class="job-card" data-category="data">
+                    <div class="job-header">
+                        <h3 class="job-title">AI Engineer</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                            <span><i class="fas fa-clock"></i> Posted 4 days ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Develop and deploy AI-powered automation solutions. Work with cutting-edge NLP and computer vision technologies to solve real-world problems.
+                    </p>
+                    <div class="job-tags">
+                        <span class="job-tag">AI/ML</span>
+                        <span class="job-tag">NLP</span>
+                        <span class="job-tag">PyTorch</span>
+                        <span class="job-tag">API Development</span>
+                    </div>
+                    <a href="#contact" class="apply-btn">Apply Now</a>
+                </div>
+
+                <!-- Job Card 6 -->
+                <div class="job-card" data-category="support">
+                    <div class="job-header">
+                        <h3 class="job-title">Technical Support Specialist</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Chicago, IL</span>
+                            <span><i class="fas fa-briefcase"></i> Full-Time</span>
+                            <span><i class="fas fa-clock"></i> Posted 1 week ago</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Provide exceptional technical support to our clients. Troubleshoot issues, document solutions, and ensure client satisfaction.
+                    </p>
+                    <div class="job-tags">
+                        <span class="job-tag">Customer Service</span>
+                        <span class="job-tag">Technical Support</span>
+                        <span class="job-tag">Problem Solving</span>
+                        <span class="job-tag">Communication</span>
+                    </div>
+                    <a href="#contact" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Work With Us</h2>
+                <p class="section-subtitle">We invest in our people and provide an environment where you can thrive</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Comprehensive Benefits</h3>
+                    <p>Full health, dental, and vision coverage plus 401(k) matching and flexible spending accounts.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3>Remote Flexibility</h3>
+                    <p>Work from anywhere with our remote-first culture. Flexible hours to maintain work-life balance.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Learning & Development</h3>
+                    <p>Annual learning budget, conference attendance, certifications, and mentorship programs.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Career Growth</h3>
+                    <p>Clear career paths, regular performance reviews, and opportunities for advancement.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Inclusive Culture</h3>
+                    <p>Diverse, collaborative environment where every voice matters and innovation thrives.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Time Off</h3>
+                    <p>Generous PTO policy, paid holidays, parental leave, and sabbatical opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html#staffing">Browse Jobs</a></li>
+                        <li><a href="index.html#staffing">Contract Talent</a></li>
+                        <li><a href="index.html#staffing">Permanent Talent</a></li>
+                        <li><a href="index.html#services">Consulting Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Areas of Expertise</h3>
+                    <ul>
+                        <li><a href="index.html#staffing">Technology</a></li>
+                        <li><a href="index.html#services">Software Development</a></li>
+                        <li><a href="index.html#services">AI & Automation</a></li>
+                        <li><a href="index.html#services">Cloud & Infrastructure</a></li>
+                        <li><a href="index.html#services">Data & Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources & Tools</h3>
+                    <ul>
+                        <li><a href="index.html#about">Discover Insights</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                        <li><a href="index.html#testimonials">Client Stories</a></li>
+                        <li><a href="careers.html">Job Directory</a></li>
+                        <li><a href="index.html#services">Salary Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="index.html#about">About US Aura Solutions</a></li>
+                        <li><a href="index.html#about">Leadership</a></li>
+                        <li><a href="careers.html">Careers With Us</a></li>
+                        <li><a href="index.html#contact">Locations</a></li>
+                        <li><a href="index.html#about">Our Story</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2024 US Aura Solutions LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Load jobs from localStorage and add to page
+        function loadDynamicJobs() {
+            const jobsGrid = document.querySelector('.jobs-grid');
+            const savedJobs = JSON.parse(localStorage.getItem('jobPostings') || '[]');
+            
+            if (savedJobs.length > 0) {
+                savedJobs.forEach(job => {
+                    const jobCard = createJobCard(job);
+                    jobsGrid.insertAdjacentHTML('afterbegin', jobCard);
+                });
+            }
+        }
+
+        function createJobCard(job) {
+            const timeAgo = getTimeAgo(new Date(job.postedDate));
+            const salaryInfo = job.salaryMin && job.salaryMax 
+                ? `<p style="color: #666; margin-bottom: 1rem;"><strong>Salary:</strong> $${parseInt(job.salaryMin).toLocaleString()} - $${parseInt(job.salaryMax).toLocaleString()}</p>`
+                : '';
+
+            return `
+                <div class="job-card" data-category="${job.category}">
+                    <div class="job-header">
+                        <h3 class="job-title">${job.title}</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
+                            <span><i class="fas fa-briefcase"></i> ${job.type}</span>
+                            <span><i class="fas fa-clock"></i> ${timeAgo}</span>
+                        </div>
+                    </div>
+                    <p class="job-description">${job.description}</p>
+                    ${salaryInfo}
+                    <div class="job-tags">
+                        ${job.tags.map(tag => `<span class="job-tag">${tag}</span>`).join('')}
+                    </div>
+                    <a href="${job.applyLink}" class="apply-btn">Apply Now</a>
+                </div>
+            `;
+        }
+
+        function getTimeAgo(date) {
+            const seconds = Math.floor((new Date() - date) / 1000);
+            const intervals = {
+                year: 31536000,
+                month: 2592000,
+                week: 604800,
+                day: 86400,
+                hour: 3600,
+                minute: 60
+            };
+
+            for (let [unit, secondsInUnit] of Object.entries(intervals)) {
+                const interval = Math.floor(seconds / secondsInUnit);
+                if (interval >= 1) {
+                    return `Posted ${interval} ${unit}${interval > 1 ? 's' : ''} ago`;
+                }
+            }
+            return 'Posted just now';
+        }
+
+        // Load dynamic jobs on page load
+        window.addEventListener('DOMContentLoaded', loadDynamicJobs);
+
+        // Job Filter Functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+                const jobCards = document.querySelectorAll('.job-card');
+
+                jobCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
