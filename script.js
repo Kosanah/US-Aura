@@ -1,74 +1,7 @@
 // ==================== //
-// Custom Cursor Effect
+// Custom Cursor Effect - DISABLED
 // ==================== //
-const cursor = document.createElement('div');
-const cursorFollower = document.createElement('div');
-
-cursor.className = 'custom-cursor';
-cursorFollower.className = 'cursor-follower';
-
-document.body.appendChild(cursor);
-document.body.appendChild(cursorFollower);
-
-let mouseX = 0;
-let mouseY = 0;
-let cursorX = 0;
-let cursorY = 0;
-let followerX = 0;
-let followerY = 0;
-
-// Track mouse position
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-// Animate cursor with smooth following effect
-function animateCursor() {
-    // Main cursor follows immediately
-    cursorX += (mouseX - cursorX) * 0.3;
-    cursorY += (mouseY - cursorY) * 0.3;
-    
-    // Follower has delay for trailing effect
-    followerX += (mouseX - followerX) * 0.1;
-    followerY += (mouseY - followerY) * 0.1;
-    
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-    
-    cursorFollower.style.left = followerX + 'px';
-    cursorFollower.style.top = followerY + 'px';
-    
-    requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
-
-// Add hover effects on interactive elements
-const interactiveElements = document.querySelectorAll('a, button, .service-card, .nav-link');
-
-interactiveElements.forEach(element => {
-    element.addEventListener('mouseenter', () => {
-        cursor.classList.add('cursor-hover');
-        cursorFollower.classList.add('cursor-hover');
-    });
-    
-    element.addEventListener('mouseleave', () => {
-        cursor.classList.remove('cursor-hover');
-        cursorFollower.classList.remove('cursor-hover');
-    });
-});
-
-// Hide cursor when leaving window
-document.addEventListener('mouseleave', () => {
-    cursor.style.opacity = '0';
-    cursorFollower.style.opacity = '0';
-});
-
-document.addEventListener('mouseenter', () => {
-    cursor.style.opacity = '1';
-    cursorFollower.style.opacity = '1';
-});
+// Custom cursor has been disabled for cleaner look
 
 // ==================== //
 // Navigation Toggle
@@ -106,7 +39,7 @@ navLinks.forEach(link => {
 });
 
 // ==================== //
-// Smooth Scroll with Offset
+// Smooth Scroll with Offset - Enhanced
 // ==================== //
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -115,10 +48,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (target) {
             const offset = 80; // Height of fixed navbar
             const targetPosition = target.offsetTop - offset;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
+            
+            // Enhanced smooth scroll with easing
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 1000; // 1 second
+            let start = null;
+            
+            function smoothScroll(currentTime) {
+                if (start === null) start = currentTime;
+                const timeElapsed = currentTime - start;
+                const progress = Math.min(timeElapsed / duration, 1);
+                
+                // Easing function for smoother animation
+                const easeInOutCubic = progress < 0.5 
+                    ? 4 * progress * progress * progress 
+                    : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+                
+                window.scrollTo(0, startPosition + distance * easeInOutCubic);
+                
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(smoothScroll);
+                }
+            }
+            
+            requestAnimationFrame(smoothScroll);
         }
     });
 });
@@ -474,5 +428,90 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
+// ==================== //
+// NEW: Pricing Toggle (Monthly/Yearly)
+// ==================== //
+const pricingSwitch = document.getElementById('pricing-switch');
+if (pricingSwitch) {
+    pricingSwitch.addEventListener('change', function() {
+        const monthlyPrices = document.querySelectorAll('.monthly-price');
+        const yearlyPrices = document.querySelectorAll('.yearly-price');
+        
+        if (this.checked) {
+            monthlyPrices.forEach(price => price.style.display = 'none');
+            yearlyPrices.forEach(price => price.style.display = 'inline');
+        } else {
+            monthlyPrices.forEach(price => price.style.display = 'inline');
+            yearlyPrices.forEach(price => price.style.display = 'none');
+        }
+    });
+}
+
+// ==================== //
+// NEW: Scroll Animations
+// ==================== //
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+            }, index * 100);
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in-up').forEach(element => {
+    observer.observe(element);
+});
+
+// ==================== //
+// NEW: Parallax Effect on Hero
+// ==================== //
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroBackground = document.querySelector('.hero-background');
+    const heroGraphic = document.querySelector('.hero-graphic');
+    
+    if (heroBackground) {
+        heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+    
+    if (heroGraphic) {
+        heroGraphic.style.transform = `translateY(${scrolled * 0.2}px)`;
+    }
+});
+
+// ==================== //
+// NEW: Smooth Navbar Hide/Show
+// ==================== //
+let lastScroll = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+        navbar.classList.remove('scroll-up');
+        return;
+    }
+    
+    if (currentScroll > lastScroll && !navbar.classList.contains('scroll-down')) {
+        navbar.classList.remove('scroll-up');
+        navbar.classList.add('scroll-down');
+    } else if (currentScroll < lastScroll && navbar.classList.contains('scroll-down')) {
+        navbar.classList.remove('scroll-down');
+        navbar.classList.add('scroll-up');
+    }
+    
+    lastScroll = currentScroll;
+});
+
 console.log('🚀 US Aura Solutions - Website Loaded Successfully!');
 console.log('Vision. Value. Velocity.');
+console.log('✨ New Futuristic Design Active');
